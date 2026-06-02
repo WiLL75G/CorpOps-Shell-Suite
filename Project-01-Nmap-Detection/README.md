@@ -1,4 +1,4 @@
-# Project 01 — Nmap Port Scan Detection (MITRE T1046)
+# Project 01 Nmap Port Scan Detection (MITRE T1046)
 
 ## Incident Summary
 
@@ -35,7 +35,7 @@ Documented Ubuntu's known-good state before the attack:
 - Screenshots: `screenshots/phase02/01–04_*_baseline.png`
 
 **SOC Observations:**
-- UFW inactive — host firewall not enforcing any rules at time of attack
+- UFW inactive host firewall not enforcing any rules at time of attack
 - Samba services (`139/tcp`, `445/tcp`) listening on all interfaces broad attack surface
 - SSH (`22/tcp`) and HTTP (`80/tcp`) listening on all interfaces expected services
 
