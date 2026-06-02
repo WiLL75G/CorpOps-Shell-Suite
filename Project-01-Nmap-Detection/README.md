@@ -2,7 +2,7 @@
 
 ## Incident Summary
 
-A TCP SYN port scan originating from `192.168.64.15` (Kali Linux attacker host) was directed at `192.168.64.12` (Ubuntu Server `wazuh-manager`). The scan probed 1,000 distinct destination ports in 37.7 milliseconds, identifying four open services. The activity was captured, analyzed, detected by a custom Bash detector, and contained via host-firewall response. The complete loop baseline → detection → response → verification → log corroboration — was executed and evidenced.
+A TCP SYN port scan originating from `192.168.64.15` (Kali Linux attacker host) was directed at `192.168.64.12` (Ubuntu Server `wazuh-manager`). The scan probed 1,000 distinct destination ports in 37.7 milliseconds, identifying four open services. The activity was captured, analyzed, detected by a custom Bash detector, and contained via host-firewall response. The complete loop baseline → detection → response → verification → log corroboration was executed and evidenced.
 
 ## Executive Summary
 
