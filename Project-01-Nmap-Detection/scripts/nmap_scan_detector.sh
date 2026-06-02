@@ -4,8 +4,8 @@
 #
 # Purpose:  Detect TCP SYN port-scan patterns in a packet capture (.pcap).
 # Author:   James Williams (WiLL75G)
-# Project:  CorpOps-Shell-Suite / Project 01 - Nmap Detection
-# MITRE:    T1046 - Network Service Discovery
+# Project:  CorpOps-Shell-Suite / Project 01 Nmap Detection
+# MITRE:    T1046 Network Service Discovery
 #
 # Usage:    ./nmap_scan_detector.sh <path-to-pcap-file>
 # Example:  ./nmap_scan_detector.sh ../logs/nmap_scan_capture.pcap
