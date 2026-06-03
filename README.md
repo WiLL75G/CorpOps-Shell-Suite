@@ -39,10 +39,10 @@ Every project follows the same folder convention and README format.
 ```
 Project-XX-Name/
 ├── README.md                  # SOC Tier 1 Incident Report
-├── baseline/                  # Pre-attack known-good state snapshots
+├── baseline/                  # Pre attack known good state snapshots
 ├── scripts/                   # Detection and analysis scripts
 ├── logs/                      # Captured evidence (pcap, alert logs)
-└── screenshots/               # Phase-organised visual evidence
+└── screenshots/               # Phase organised visual evidence
     ├── phase01/
     └── phase02/
 ```
@@ -101,8 +101,8 @@ CorpOps-Shell-Suite/
 
 ## Author
 
-James Williams
+William Gokah
 SOC Analyst | Blue Team | ISC2 Certified in Cybersecurity (CC)
 
-- GitHub: [WiLL75G](https://github.com/WiLL75G)
-- X: [@WilliamInCyber](https://x.com/WilliamInCyber)
+[![GitHub](https://img.shields.io/badge/GitHub-WiLL75G-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/WiLL75G)
+[![X](https://img.shields.io/badge/X-%40WilliamInCyber-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/WilliamInCyber)
