@@ -110,7 +110,7 @@ CorpOps-Shell-Suite/
 ## Author
 
 William Gokah
-SOC Analyst | Blue Team | ISC2 Certified in Cybersecurity (CC)
+> SOC Analyst | Blue Team | ISC2 Certified in Cybersecurity (CC)
 
 [![GitHub](https://img.shields.io/badge/GitHub-WiLL75G-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/WiLL75G)
 [![X](https://img.shields.io/badge/X-%40WilliamInCyber-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/WilliamInCyber)
