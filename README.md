@@ -30,7 +30,7 @@ The lab runs inside a fictional enterprise environment **Nexus Corp** giving eac
 | # | Project | MITRE Technique | Status |
 |---|---|---|---|
 | 01 | [Nmap Port Scan Detection](./Project-01-Nmap-Detection/) | T1046 Network Service Discovery | ✅ Complete |
-| 02 | WebSift Web Asset Audit | T1593 Search Open Websites/Domains | 🔄 Coming Soon |
+| 02 | [WebSift Web Asset Audit](./Project-02-WebSift-Audit/) | T1593 Search Open Websites/Domains | ✅ Complete |
 | 03 | Tookie-OSINT Digital Footprint | T1589 Gather Victim Identity Information | 🔄 Coming Soon |
 | 04 | User-Scanner Email/Username OSINT | T1589 Gather Victim Identity Information | 🔄 Coming Soon |
 | 05 | IP Commands Threat Intel Enrichment | T1071 Application Layer Protocol | 🔄 Coming Soon |
