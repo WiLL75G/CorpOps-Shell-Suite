@@ -6,32 +6,32 @@
 
 ## Audit Summary
 
-A defensive reconnaissance audit was conducted to answer a single question a CISO cares about: **"What can an attacker learn about us from public sources, without ever touching our network?"** To answer it, a purpose-built tool **WebSift** was developed from scratch and used to enumerate the public footprint of a web target: disclosed technology, exposed crawl directives, and missing security controls. All activity was passive and limited to information the target already serves publicly. Findings were analyzed from a defender's perspective and translated into hardening recommendations.
+A defensive reconnaissance audit was conducted to answer a single question a CISO cares about: **"What can an attacker learn about us from public sources, without ever touching our network?"** To answer it, a purpose built tool **WebSift** was developed from scratch and used to enumerate the public footprint of a web target: disclosed technology, exposed crawl directives, and missing security controls. All activity was passive and limited to information the target already serves publicly. Findings were analyzed from a defender's perspective and translated into hardening recommendations.
 
 ## Executive Summary
 
-Reconnaissance is the first phase of nearly every intrusion, and **MITRE ATT&CK T1593 (Search Open Websites/Domains)** is among the cheapest steps an adversary can take — no packets to the victim's network, just queries against public sources. If an organization has not audited its own footprint, the attacker has effectively won the reconnaissance round before any alert could fire.
+Reconnaissance is the first phase of nearly every intrusion, and **MITRE ATT&CK T1593 (Search Open Websites/Domains)** is among the cheapest steps an adversary can take no packets to the victim's network, just queries against public sources. If an organization has not audited its own footprint, the attacker has effectively won the reconnaissance round before any alert could fire.
 
-To operationalize this defensively, WebSift was built as a four-module Python tool that, given a target URL, performs:
+To operationalize this defensively, WebSift was built as a four module Python tool that, given a target URL, performs:
 
 1. **HTTP technology fingerprinting** identifies disclosed server/stack details and flags version numbers (which map directly to known CVEs).
 2. **robots.txt / sitemap.xml parsing** surfaces paths and structure the site publishes to crawlers, which often act as a map to sensitive locations.
 3. **Security-header auditing** checks for the presence of six recommended protective headers and reports gaps as an actionable hardening checklist.
 
-The tool was first validated against a hardened control target (`example.com`), which disclosed minimal information, then run against an authorized real-world target (`scanme.nmap.org`). The contrast was instructive: the control disclosed almost nothing, while the real target leaked its exact web server version (**Apache/2.4.7 (Ubuntu)**) and was missing **all six** recommended security headers. Both results were produced in seconds — demonstrating how quickly an attacker maps an under-hardened footprint, and why defenders must do it first.
+The tool was first validated against a hardened control target (`example.com`), which disclosed minimal information, then run against an authorized real world target (`scanme.nmap.org`). The contrast was instructive: the control disclosed almost nothing, while the real target leaked its exact web server version (**Apache/2.4.7 (Ubuntu)**) and was missing **all six** recommended security headers. Both results were produced in seconds demonstrating how quickly an attacker maps an under-hardened footprint, and why defenders must do it first.
 
 ## Affected System (Audited Targets)
 
 | Role | Target | Purpose |
 |---|---|---|
-| Control (hardened baseline) | `https://example.com` | IANA-reserved domain used to establish what a minimal-disclosure footprint looks like |
+| Control (hardened baseline) | `https://example.com` | IANA reserved domain used to establish what a minimal disclosure footprint looks like |
 | Authorized live target | `http://scanme.nmap.org` | A host explicitly sanctioned by its operator for scanning and testing |
 
 **Tooling environment:** Kali Linux (analyst workstation), Python 3.13, `requests` 2.32. WebSift authored from scratch; no third-party scanning tools used.
 
 ## Scope & Authorization
 
-This audit was conducted strictly against targets that are either purpose-built for testing (`example.com`, IANA-reserved for documentation) or explicitly authorized for scanning by their operator (`scanme.nmap.org`). WebSift performs only passive, read-only requests for resources the target already serves publicly. It performs no authentication, no exploitation, no brute-forcing, and no active vulnerability probing. Public availability of data does not imply authorization to test arbitrary systems; documenting scope is a deliberate part of the methodology.
+This audit was conducted strictly against targets that are either purpose-built for testing (`example.com`, IANA reserved for documentation) or explicitly authorized for scanning by their operator (`scanme.nmap.org`). WebSift performs only passive, read-only requests for resources the target already serves publicly. It performs no authentication, no exploitation, no brute-forcing, and no active vulnerability probing. Public availability of data does not imply authorization to test arbitrary systems; documenting scope is a deliberate part of the methodology.
 
 ## Investigation Methodology
 
