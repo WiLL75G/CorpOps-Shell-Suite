@@ -86,7 +86,7 @@ Ran the complete four-module tool against the hardened control (`example.com`) a
 
 | Tactic | Technique | ID | Application in this Audit |
 |---|---|---|---|
-| Reconnaissance | Search Open Websites/Domains | T1593 | Public, passive collection of a target's disclosed technology, crawl directives, and security posture — the information an adversary gathers before any direct interaction with the victim network. |
+| Reconnaissance | Search Open Websites/Domains | T1593 | Public, passive collection of a target's disclosed technology, crawl directives, and security posture the information an adversary gathers before any direct interaction with the victim network. |
 
 ## Analyst Findings
 
