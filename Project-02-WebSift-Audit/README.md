@@ -10,7 +10,7 @@ A defensive reconnaissance audit was conducted to answer a single question a CIS
 
 ## Executive Summary
 
-Reconnaissance is the first phase of nearly every intrusion, and **MITRE ATT&CK T1593 (Search Open Websites/Domains)** is among the cheapest steps an adversary can take — no packets to the victim's network, just queries against public sources. If an organization has not audited its own footprint, the attacker has effectively won the reconnaissance round before any alert could fire.
+Reconnaissance is the first phase of nearly every intrusion, and **MITRE ATT&CK T1593 (Search Open Websites/Domains)** is among the cheapest steps an adversary can take no packets to the victim's network, just queries against public sources. If an organization has not audited its own footprint, the attacker has effectively won the reconnaissance round before any alert could fire.
 
 To operationalize this defensively, WebSift was built as a four-module Python tool that, given a target URL, performs:
 
