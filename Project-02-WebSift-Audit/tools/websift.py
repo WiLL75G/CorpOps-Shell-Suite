@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """
-WebSift - Public Web Asset & Footprint Auditor
+WebSift Public Web Asset & Footprint Auditor
 ================================================
 A defensive (blue-team) OSINT tool that audits the PUBLIC footprint of a
 single web target. It only reads information the target already serves to
-any browser - no authentication, no exploitation, no brute-forcing.
+any browser no authentication, no exploitation, no brute-forcing.
 
-MITRE ATT&CK mapping: T1593 - Search Open Websites/Domains (defensive use).
+MITRE ATT&CK mapping: T1593 Search Open Websites/Domains (defensive use).
 
 Author : James Williams (github.com/WiLL75G)
-Project: CorpOps Shell Suite - Project 02
+Project: CorpOps Shell Suite Project 02
 Modules: 1 Fetch Core | 2 Header Fingerprint | 3 robots/sitemap | 4 Security Headers
 """
 
@@ -146,7 +146,7 @@ class WebSift:
                 print("    robots.txt is PUBLIC, so it can act as a map to")
                 print("    sensitive locations for an attacker.")
             else:
-                print("    (No Disallow entries - robots.txt discloses little.)")
+                print("    (No Disallow entries robots.txt discloses little.)")
 
         sitemap = self._get_public_file("/sitemap.xml")
         if sitemap is None:
@@ -200,13 +200,13 @@ class WebSift:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="WebSift - public web footprint auditor (defensive OSINT, MITRE T1593)"
+        description="WebSift public web footprint auditor (defensive OSINT, MITRE T1593)"
     )
     parser.add_argument("target", help="Target URL, e.g. https://example.com (scheme optional)")
     args = parser.parse_args()
 
     print("=" * 60)
-    print("  WebSift v1.0 - Public Web Footprint Auditor")
+    print("  WebSift v1.0 Public Web Footprint Auditor")
     print("  Defensive OSINT | MITRE ATT&CK T1593")
     print("=" * 60)
 
