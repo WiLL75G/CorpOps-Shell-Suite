@@ -40,7 +40,7 @@ Authored a Python class that fetches a target once and stores the response for a
 
 *Evidence: `websift_module1_fetch_test.png`*
 
-**Analyst note:** Building the fetch core as a reusable foundation (one request, many analyses) is both an engineering decision and an ethical one — it avoids hammering the target with redundant requests.
+**Analyst note:** Building the fetch core as a reusable foundation (one request, many analyses) is both an engineering decision and an ethical one it avoids hammering the target with redundant requests.
 
 ### 2. Implemented technology fingerprinting (Module 2)
 Added analysis of response headers that commonly disclose technology and version information (`Server`, `X-Powered-By`, and similar). The module flags any value containing a version number, since exact versions map directly to known CVEs.
