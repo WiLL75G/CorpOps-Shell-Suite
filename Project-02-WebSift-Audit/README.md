@@ -18,7 +18,7 @@ To operationalize this defensively, WebSift was built as a four-module Python to
 2. **robots.txt / sitemap.xml parsing** surfaces paths and structure the site publishes to crawlers, which often act as a map to sensitive locations.
 3. **Security-header auditing** checks for the presence of six recommended protective headers and reports gaps as an actionable hardening checklist.
 
-The tool was first validated against a hardened control target (`example.com`), which disclosed minimal information, then run against an authorized real-world target (`scanme.nmap.org`). The contrast was instructive: the control disclosed almost nothing, while the real target leaked its exact web server version (**Apache/2.4.7 (Ubuntu)**) and was missing **all six** recommended security headers. Both results were produced in seconds — demonstrating how quickly an attacker maps an under-hardened footprint, and why defenders must do it first.
+The tool was first validated against a hardened control target (`example.com`), which disclosed minimal information, then run against an authorized real-world target (`scanme.nmap.org`). The contrast was instructive: the control disclosed almost nothing, while the real target leaked its exact web server version (**Apache/2.4.7 (Ubuntu)**) and was missing **all six** recommended security headers. Both results were produced in seconds demonstrating how quickly an attacker maps an under-hardened footprint, and why defenders must do it first.
 
 ## Affected System (Audited Targets)
 
