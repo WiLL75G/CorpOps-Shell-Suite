@@ -142,7 +142,7 @@ For an organization auditing employee or service-account usernames:
 
 1. **Review GitHub email visibility settings** commit history can expose email addresses even when the profile hides them.
 2. **Audit Reddit and HackerNews post history** for sensitive organizational information, technology disclosures, or security questions.
-3. **Manually verify any `429` responses** — rate-limited platforms require a browser check to confirm presence or absence.
+3. **Manually verify any `429` responses** rate-limited platforms require a browser check to confirm presence or absence.
 4. **Run the credential dork queries** (`intext:"password"`, `"API key"`, `"access token"`) manually and investigate any results immediately.
 5. **Run Tookie-OSINT on a recurring schedule** against critical usernames exposure changes as users create new accounts, post new content, or commit new code.
 
