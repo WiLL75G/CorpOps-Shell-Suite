@@ -150,16 +150,16 @@ For an organization auditing employee or service-account usernames:
 
 ## Analyst Insight
 
-The most instructive moment in this audit was the TryHackMe `429` response. A less careful tool — or a less careful analyst would classify that as "not found" and move on. It is not not found. It is rate-limited, which means the platform detected automated querying and refused to answer. The profile may exist. That distinction is the difference between a closed gap and an open one that was simply mislabeled.
+The most instructive moment in this audit was the TryHackMe `429` response. A less careful tool or a less careful analyst would classify that as "not found" and move on. It is not not found. It is rate-limited, which means the platform detected automated querying and refused to answer. The profile may exist. That distinction is the difference between a closed gap and an open one that was simply mislabeled.
 
-It is also a reminder that tool output requires interpretation. HTTP response codes are not binary. `403` is not the same as `404`. `429` is not the same as either. Building a tool that classifies responses correctly and communicates uncertainty where it exists — is the difference between automation and analysis.
+It is also a reminder that tool output requires interpretation. HTTP response codes are not binary. `403` is not the same as `404`. `429` is not the same as either. Building a tool that classifies responses correctly and communicates uncertainty where it exists is the difference between automation and analysis.
 
 ---
 
 ## Learning Outcome
 
 - Built a modular, production-shaped Python OSINT tool from scratch with argument parsing, graceful error handling, and file output.
-- Practised HTTP response code interpretation as a core analyst skill — `200`, `403`, `404`, and `429` each carry distinct defensive meaning.
+- Practised HTTP response code interpretation as a core analyst skill `200`, `403`, `404`, and `429` each carry distinct defensive meaning.
 - Translated MITRE T1589 from an offensive technique into an authorized, scoped defensive audit.
 - Generated structured report output suitable for evidence documentation and README integration.
 - Demonstrated that passive reconnaissance produces actionable intelligence without any network interaction with the target — reinforcing why defenders must audit their own footprint first.
