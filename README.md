@@ -28,6 +28,8 @@ The lab runs inside a fictional enterprise environment **Nexus Corp** giving eac
 ## Projects
 
 | ## | Project | MITRE ATT&CK Technique | Status |
+| # | Project | MITRE ATT&CK Technique | Status |
+|---|---|---|---|
 | 01 | [Nmap Port Scan Detection](./Project-01-Nmap-Detection/) | T1046 Network Service Discovery | ✅ Complete |
 | 02 | [WebSift Web Asset Audit](./Project-02-WebSift-Audit/) | T1593 Search Open Websites/Domains | ✅ Complete |
 | 03 | [Tookie-OSINT Digital Footprint](./Project-03-Tookie-OSINT-Footprint/) | T1589 Gather Victim Identity Information | ✅ Complete |
