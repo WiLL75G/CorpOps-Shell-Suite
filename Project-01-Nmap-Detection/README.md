@@ -1,4 +1,4 @@
-# Project 01 Nmap Port Scan Detection (MITRE T1046)
+# Nmap Port Scan Detection (MITRE T1046)
 
 ## Incident Summary
 
