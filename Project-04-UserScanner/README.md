@@ -1,4 +1,4 @@
-# Project 04 User-Scanner: Email & Username OSINT Tool (MITRE T1589)
+# User-Scanner: Email & Username OSINT Tool (MITRE T1589)
 
 > Built a custom Python tool that takes a single email address and produces a complete identity reconnaissance profile mail server fingerprint, derived username platform presence, and targeted dork queries the same audit an adversary runs before crafting a targeted attack.
 
