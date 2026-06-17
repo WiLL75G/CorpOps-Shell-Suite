@@ -1,4 +1,4 @@
-# Project 03 Tookie-OSINT: Digital Footprint Auditor (MITRE T1589)
+# Tookie-OSINT: Digital Footprint Auditor (MITRE T1589)
 
 > Built a custom Python OSINT tool from scratch that maps a target's public digital footprint across platforms the same identity enumeration an adversary performs before attacking, run proactively by the defender.
 
