@@ -16,7 +16,7 @@
 
 # CorpOps Shell Suite
 
-> The most common gap in early-career SOC hiring is not technical knowledge, it is proof of analyst thinking.
+The most common gap in early-career SOC hiring is not technical knowledge, it is proof of analyst thinking.
 
 Candidates who can run tools are everywhere. Candidates who can look at 1,000 TCP connections in 37 milliseconds and recognise the behavioural fingerprint, write a script that catches it, produce a SIEM-ready alert, apply a correctly-ordered firewall response, and independently verify it held, those are the analysts SOC managers actually want to hire.
 
