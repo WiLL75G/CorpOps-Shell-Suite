@@ -1,9 +1,11 @@
-██████╗ ██████╗ ██████╗ ██████╗  ██████╗ ██████╗ ███████╗
+\`\`\`
+ ██████╗ ██████╗ ██████╗ ██████╗  ██████╗ ██████╗ ███████╗
 ██╔════╝██╔═══██╗██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██╔════╝
 ██║     ██║   ██║██████╔╝██████╔╝██║   ██║██████╔╝███████╗
 ██║     ██║   ██║██╔══██╗██╔═══╝ ██║   ██║██╔═══╝ ╚════██║
 ╚██████╗╚██████╔╝██║  ██║██║     ╚██████╔╝██║     ███████║
  ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝      ╚═════╝ ╚═╝     ╚══════╝
+\`\`\`
 
 [![Blue Team Notes](https://img.shields.io/badge/Blue_Team_Notes-WilliamInCyber-1F6FEB?style=flat&logo=github&logoColor=white)](https://github.com/WiLL75G)
 [![Projects](https://img.shields.io/badge/Suite-8_Projects-1F6FEB?style=flat)](https://github.com/WiLL75G)
@@ -58,14 +60,16 @@ The lab runs inside a fictional enterprise environment, Nexus Corp, giving each 
 
 Every project follows the same folder convention and README format.
 
+\`\`\`
 Project-XX-Name/
-├── README.md                  # SOC Tier 1 Incident Report
-├── baseline/                  # Pre-attack known-good state snapshots
-├── scripts/                   # Detection and analysis scripts
-├── logs/                      # Captured evidence (pcap, alert logs)
-└── screenshots/               # Phase-organised visual evidence
+├── README.md
+├── baseline/
+├── scripts/
+├── logs/
+└── screenshots/
     ├── phase01/
     └── phase02/
+\`\`\`
 
 Each README follows this locked structure,
 
@@ -101,6 +105,7 @@ Behavioral detection (rate, timing, pattern) is favoured over signature detectio
 
 ## Repository Structure
 
+\`\`\`
 CorpOps-Shell-Suite/
 ├── README.md
 ├── Project-01-Nmap-Detection/
@@ -111,6 +116,7 @@ CorpOps-Shell-Suite/
 ├── Project-06-Whois-Spoofing/
 ├── Project-07-EternalView-Recon/
 └── Project-08-SMTP-Phishing/
+\`\`\`
 
 ---
 
