@@ -41,15 +41,13 @@ The lab runs inside a fictional enterprise environment, **Nexus Corp**, giving e
 ---
 
 ## Projects
-
-| ## | Project | MITRE ATT&CK Technique | Status |
 | # | Project | MITRE ATT&CK Technique | Status |
 |---|---|---|---|
 | 01 | [Nmap Port Scan Detection](./Project-01-Nmap-Detection/) | T1046 Network Service Discovery | ✅ Complete |
 | 02 | [WebSift Web Asset Audit](./Project-02-WebSift-Audit/) | T1593 Search Open Websites/Domains | ✅ Complete |
 | 03 | [Tookie-OSINT Digital Footprint](./Project-03-Tookie-OSINT-Footprint/) | T1589 Gather Victim Identity Information | ✅ Complete |
 | 04 | [User-Scanner Email/Username OSINT](./Project-04-UserScanner/) | T1589 Gather Victim Identity Information | ✅ Complete |
-| 05 | IP Commands Threat Intel Enrichment | T1071 Application Layer Protocol | 🔄 Coming Soon |
+| 05 | [IP Commands Threat Intel Enrichment](./Project-05-IPCommander/) | T1071 Application Layer Protocol | ✅ Complete |
 | 06 | Whois Domain Spoofing Detection | T1566 Phishing | 🔄 Coming Soon |
 | 07 | EternalView Recon & Defense Mapping | T1595 Active Scanning | 🔄 Coming Soon |
 | 08 | Python SMTP Phishing Header Analysis | T1566 Phishing | 🔄 Coming Soon |
