@@ -1,12 +1,3 @@
-\`\`\`
- ██████╗ ██████╗ ██████╗ ██████╗  ██████╗ ██████╗ ███████╗
-██╔════╝██╔═══██╗██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██╔════╝
-██║     ██║   ██║██████╔╝██████╔╝██║   ██║██████╔╝███████╗
-██║     ██║   ██║██╔══██╗██╔═══╝ ██║   ██║██╔═══╝ ╚════██║
-╚██████╗╚██████╔╝██║  ██║██║     ╚██████╔╝██║     ███████║
- ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝      ╚═════╝ ╚═╝     ╚══════╝
-\`\`\`
-
 [![Blue Team Notes](https://img.shields.io/badge/Blue_Team_Notes-WilliamInCyber-1F6FEB?style=flat&logo=github&logoColor=white)](https://github.com/WiLL75G)
 [![Projects](https://img.shields.io/badge/Suite-8_Projects-1F6FEB?style=flat)](https://github.com/WiLL75G)
 [![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-C5221F?style=flat)](https://attack.mitre.org)
@@ -60,7 +51,6 @@ The lab runs inside a fictional enterprise environment, Nexus Corp, giving each 
 
 Every project follows the same folder convention and README format.
 
-\`\`\`
 Project-XX-Name/
 ├── README.md
 ├── baseline/
@@ -69,7 +59,6 @@ Project-XX-Name/
 └── screenshots/
     ├── phase01/
     └── phase02/
-\`\`\`
 
 Each README follows this locked structure,
 
@@ -105,7 +94,6 @@ Behavioral detection (rate, timing, pattern) is favoured over signature detectio
 
 ## Repository Structure
 
-\`\`\`
 CorpOps-Shell-Suite/
 ├── README.md
 ├── Project-01-Nmap-Detection/
@@ -116,7 +104,6 @@ CorpOps-Shell-Suite/
 ├── Project-06-Whois-Spoofing/
 ├── Project-07-EternalView-Recon/
 └── Project-08-SMTP-Phishing/
-\`\`\`
 
 ---
 
