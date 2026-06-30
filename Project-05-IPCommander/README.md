@@ -1,4 +1,4 @@
-# Project 05 IP-Commander: Threat Intelligence Enrichment (MITRE T1071)
+# IP-Commander: Threat Intelligence Enrichment (MITRE T1071)
 
 > Built a custom Python tool that takes a single IP address and returns geolocation, abuse reputation, and reverse DNS in one structured report the enrichment pipeline a SOC analyst runs every time an unfamiliar IP shows up in the logs.
 
