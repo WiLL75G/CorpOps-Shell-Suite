@@ -1,0 +1,101 @@
+=============================================================
+  WHOIS-GUARD -- DOMAIN SPOOFING DETECTION REPORT
+  MITRE ATT&CK: T1566 (Phishing)
+=============================================================
+  Legitimate domain : google.com
+  Report generated  : 2026-07-01 09:30:59
+  High-risk window  : 180 days
+=============================================================
+SCAN SUMMARY
+---------------------------------------------
+  Variants checked  : 26
+  Registered domains: 25
+  HIGH RISK         : 0
+  MODERATE RISK     : 25
+  Unregistered      : 1
+MODERATE RISK DOMAINS
+---------------------------------------------
+  [~] 9oogle.com
+      Created  : 2023-11-03 (970 days ago)
+      Registrar: Gname.com Pte. Ltd.
+  [~] g0ogle.com
+      Created  : 2001-10-19 (9021 days ago)
+      Registrar: GoDaddy.com, LLC
+  [~] go0gle.com
+      Created  : 2004-04-29 (8097 days ago)
+      Registrar: MarkMonitor, Inc.
+  [~] gogle.com
+      Created  : 1998-10-20 (10116 days ago)
+      Registrar: MarkMonitor, Inc.
+  [~] gogole.com
+      Created  : 2000-04-10 (9578 days ago)
+      Registrar: MarkMonitor, Inc.
+  [~] goo9le.com
+      Created  : 2022-01-30 (1612 days ago)
+      Registrar: NAMECHEAP INC
+  [~] goog1e.com
+      Created  : 2001-02-13 (9269 days ago)
+      Registrar: MarkMonitor, Inc.
+  [~] googe.com
+      Created  : 1998-10-02 (10134 days ago)
+      Registrar: GoDaddy.com, LLC
+  [~] googel.com
+      Created  : 2001-01-24 (9289 days ago)
+      Registrar: MarkMonitor, Inc.
+  [~] googl.com
+      Created  : 2001-01-24 (9289 days ago)
+      Registrar: MarkMonitor, Inc.
+  [~] googl3.com
+      Created  : 2013-11-11 (4614 days ago)
+      Registrar: GoDaddy.com, LLC
+  [~] google-help.com
+      Created  : 2003-12-17 (8232 days ago)
+      Registrar: GoDaddy.com, LLC
+  [~] google-login.com
+      Created  : 2025-05-20 (407 days ago)
+      Registrar: Alibaba Cloud Computing Ltd. d/b/a HiChina
+  [~] google-secure.com
+      Created  : 2005-06-01 (7700 days ago)
+      Registrar: MarkMonitor, Inc.
+  [~] google-support.com
+      Created  : 2009-07-13 (6197 days ago)
+      Registrar: Name.com, Inc.
+  [~] google-verify.com
+      Created  : 2017-11-07 (3158 days ago)
+      Registrar: Amazon Registrar, Inc.
+  [~] google.biz
+      Created  : 2002-03-27 (8861 days ago)
+      Registrar: MarkMonitor, Inc.
+  [~] google.co
+      Created  : 2010-02-25 (5970 days ago)
+      Registrar: MarkMonitor, Inc.
+  [~] google.net
+      Created  : 1999-03-15 (9970 days ago)
+      Registrar: MarkMonitor, Inc.
+  [~] google.org
+      Created  : 1998-10-21 (10115 days ago)
+      Registrar: MarkMonitor, Inc.
+  [~] googles.com
+      Created  : 1997-07-18 (10575 days ago)
+      Registrar: MarkMonitor, Inc.
+  [~] goole.com
+      Created  : 1999-11-09 (9730 days ago)
+      Registrar: IONOS SE
+  [~] goolge.com
+      Created  : 1999-06-04 (9888 days ago)
+      Registrar: MarkMonitor, Inc.
+  [~] ogogle.com
+      Created  : 2003-08-15 (8355 days ago)
+      Registrar: MarkMonitor, Inc.
+  [~] oogle.com
+      Created  : 1999-02-07 (10006 days ago)
+      Registrar: Spaceship, Inc.
+ANALYST NOTES
+---------------------------------------------
+  WHOIS lookups conducted passively against public registration data.
+  HIGH RISK = registered AND created within the threshold window.
+  T1566 defender action: block HIGH RISK domains at email gateway
+  and proxy, report to domain registrar, alert users.
+=============================================================
+  END OF REPORT
+=============================================================
