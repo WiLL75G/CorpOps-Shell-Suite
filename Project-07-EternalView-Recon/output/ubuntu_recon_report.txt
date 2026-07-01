@@ -1,0 +1,42 @@
+=============================================================
+  ETERNALVIEW -- RECON & DEFENSE MAPPING REPORT
+  MITRE ATT&CK: T1595 (Active Scanning)
+=============================================================
+  Target IP        : 192.168.64.12
+  Hostname         : Unknown
+  OS Fingerprint   : Linux 4.15 - 5.19 (accuracy: 97%)
+  Report generated : 2026-07-01 10:58:30
+=============================================================
+PORT SCAN SUMMARY
+---------------------------------------------
+  Open ports found : 3
+OPEN PORTS
+---------------------------------------------
+  22/tcp  ssh             OpenSSH 9.6p1 Ubuntu 3ubuntu13.16
+  139/tcp netbios-ssn     Samba smbd 4
+  445/tcp netbios-ssn     Samba smbd 4
+MITRE ATT&CK MAPPING & DEFENSE RECOMMENDATIONS
+---------------------------------------------
+  Port    : 22 (ssh)
+  Banner  : OpenSSH 9.6p1 Ubuntu 3ubuntu13.16
+  MITRE   : T1021.004 -- Remote Services: SSH
+  Defense : Enforce key-only auth. Disable root login. Deploy fail2ban.
+
+  Port    : 139 (netbios-ssn)
+  Banner  : Samba smbd 4
+  MITRE   : T1021.002 -- SMB/NetBIOS
+  Defense : Block at perimeter. Disable if unused. Monitor for lateral movement.
+
+  Port    : 445 (netbios-ssn)
+  Banner  : Samba smbd 4
+  MITRE   : T1021.002 -- Remote Services: SMB
+  Defense : Block at perimeter if unused. Patch EternalBlue. Require SMB signing.
+ANALYST NOTES
+---------------------------------------------
+  Scan conducted against authorized lab target only.
+  All findings mapped to MITRE ATT&CK T1595 (Active Scanning).
+  T1595 defender action: close unnecessary ports, harden exposed
+  services, verify all banners match expected software versions.
+=============================================================
+  END OF REPORT
+=============================================================
