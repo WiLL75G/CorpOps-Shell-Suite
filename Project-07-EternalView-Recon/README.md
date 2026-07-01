@@ -177,6 +177,20 @@ The port 80 discrepancy between this scan and the Project 01 baseline is the oth
 
 ## Repository Structure
 
+Project-07-EternalView/
+├── README.md
+├── scripts/
+│   └── eternalview.py
+├── output/
+│   └── ubuntu_recon_report.txt
+├── reports/
+└── screenshots/
+    ├── 01_folder_structure.png
+    ├── 02_python_environment.png
+    ├── 03a_port_scan.png
+    ├── 03b_banner_os.png
+    ├── 03c_mitre_mapping.png
+    └── 03d_report.png
 
 ---
 
