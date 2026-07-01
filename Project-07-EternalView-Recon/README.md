@@ -1,4 +1,4 @@
-# Project 07  EternalView: Recon & Defense Mapping (MITRE T1595)
+# EternalView: Recon & Defense Mapping (MITRE T1595)
 
 > Built a custom Python tool that performs structured active reconnaissance against an authorized target and maps every finding  open ports, service banners, OS fingerprint  directly to a MITRE ATT&CK technique and a specific defensive hardening action.
 
