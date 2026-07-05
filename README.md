@@ -1,3 +1,12 @@
+
+ ██████╗ ██████╗ ██████╗ ██████╗  ██████╗ ██████╗ ███████╗
+██╔════╝██╔═══██╗██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██╔════╝
+██║     ██║   ██║██████╔╝██████╔╝██║   ██║██████╔╝███████╗
+██║     ██║   ██║██╔══██╗██╔═══╝ ██║   ██║██╔═══╝ ╚════██║
+╚██████╗╚██████╔╝██║  ██║██║     ╚██████╔╝██║     ███████║
+ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝      ╚═════╝ ╚═╝     ╚══════╝
+```
+
 [![Blue Team Notes](https://img.shields.io/badge/Blue_Team_Notes-WilliamInCyber-1F6FEB?style=flat&logo=github&logoColor=white)](https://github.com/WiLL75G)
 [![Projects](https://img.shields.io/badge/Suite-8_Projects-1F6FEB?style=flat)](https://github.com/WiLL75G)
 [![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-C5221F?style=flat)](https://attack.mitre.org)
@@ -7,17 +16,20 @@
 
 # CorpOps Shell Suite
 
-The most common gap in early-career SOC hiring is not technical knowledge, it is proof of analyst thinking.
+Most cybersecurity portfolios say the same thing: "I set up a home lab and ran some tools."
 
-Candidates who can run tools are everywhere. Candidates who can look at 1,000 TCP connections in 37 milliseconds and recognise the behavioural fingerprint, write a script that catches it, produce a SIEM-ready alert, apply a correctly-ordered firewall response, and independently verify it held, those are the analysts SOC managers actually want to hire.
+This one is different.
 
-CorpOps Shell Suite was built to be that proof.
+CorpOps Shell Suite is eight structured investigations, each one built around a real attacker technique, run inside a controlled lab environment, and documented the way a SOC analyst actually works not a tutorial, not a walkthrough, but a complete defender's workflow from first packet to final report.
 
-Eight projects. Each one simulates a real attacker technique against a live home lab environment, then works through the complete defender's workflow from the ground up. Every project produces a structured SOC Tier 1 incident report, a detection or analysis script, full evidence artifacts (packet captures, alert logs, screenshots), and MITRE ATT&CK mapping.
+Every project answers four questions:
 
-Not tutorial output. Investigation documentation, the kind a Tier 1 analyst produces for escalation review.
+- What does this attack look like on the wire or in the logs?
+- How do you build a tool or script that catches it?
+- What do you do when you find it?
+- How do you prove what happened?
 
-The lab runs inside a fictional enterprise environment, Nexus Corp, giving each investigation a realistic operational context, an attacker host, a target host, an endpoint, and a SIEM.
+The lab runs inside a fictional enterprise **Nexus Corp** with an attacker host, a target server, an endpoint, and a SIEM. Every project is self-contained and every README is written in SOC Tier 1 incident report format the same format a real analyst would hand to Tier 2 for escalation.
 
 ---
 
@@ -25,58 +37,67 @@ The lab runs inside a fictional enterprise environment, Nexus Corp, giving each 
 
 | Component | Role |
 |---|---|
-| Kali Linux (UTM VM) | Attacker simulation |
-| Ubuntu Server (UTM VM) | Target host |
+| Kali Linux (UTM VM) | Attacker simulates the threat |
+| Ubuntu Server (UTM VM) | Target the system being defended |
 | Windows 11 (UTM VM) | Endpoint simulation |
-| Splunk Enterprise (macOS host) | SIEM / log analysis |
+| Splunk Enterprise (macOS host) | SIEM log analysis and alerting |
 
 ---
 
-## Projects
+## The 8 Projects
 
-| # | Project | MITRE ATT&CK Technique | Status |
-|---|---|---|---|
-| 01 | [Nmap Port Scan Detection](./Project-01-Nmap-Detection/) | T1046 Network Service Discovery | ✅ Complete |
-| 02 | [WebSift Web Asset Audit](./Project-02-WebSift-Audit/) | T1593 Search Open Websites/Domains | ✅ Complete |
-| 03 | [Tookie-OSINT Digital Footprint](./Project-03-Tookie-OSINT-Footprint/) | T1589 Gather Victim Identity Information | ✅ Complete |
-| 04 | [User-Scanner Email/Username OSINT](./Project-04-UserScanner/) | T1589 Gather Victim Identity Information | ✅ Complete |
-| 05 | [IP Commands Threat Intel Enrichment](./Project-05-IPCommander/) | T1071 Application Layer Protocol | ✅ Complete |
-| 06 | [Whois Domain Spoofing Detection](./Project-06-Whois-Spoofing-Detection/) | T1566 Phishing | ✅ Complete |
-| 07 | [EternalView Recon & Defense Mapping](./Project-07-EternalView-Recon/) | T1595 Active Scanning | ✅ Complete |
-| 08 | [Python SMTP Phishing Header Analysis](./Project-08-SMTP-Phishing-Analysis/) | T1566 Phishing | ✅ Complete |
+Each project covers a different attacker technique and produces a detection script or analysis tool, evidence artifacts, and a full MITRE-mapped report.
+
+| # | Project | What It Detects | MITRE | Status |
+|---|---|---|---|---|
+| 01 | [Nmap Port Scan Detection](./Project-01-Nmap-Detection/) | TCP SYN port scans across 1,000 ports in 37ms | T1046 | ✅ Complete |
+| 02 | [WebSift Web Asset Audit](./Project-02-WebSift-Audit/) | Public web footprint server versions, missing security headers | T1593 | ✅ Complete |
+| 03 | [Tookie-OSINT Digital Footprint](./Project-03-Tookie-OSINT-Footprint/) | Username presence across 8 platforms | T1589 | ✅ Complete |
+| 04 | [User-Scanner Email/Username OSINT](./Project-04-UserScanner/) | Email domain analysis, MX records, platform enumeration | T1589 | ✅ Complete |
+| 05 | [IP Commands Threat Intel Enrichment](./Project-05-IPCommander/) | IP geolocation, abuse reputation, reverse DNS | T1071 | ✅ Complete |
+| 06 | [Whois Domain Spoofing Detection](./Project-06-Whois-Spoofing-Detection/) | Typosquat domain registration phishing infrastructure | T1566 | ✅ Complete |
+| 07 | [EternalView Recon & Defense Mapping](./Project-07-EternalView-Recon/) | Active recon mapped to MITRE techniques and hardening actions | T1595 | ✅ Complete |
+| 08 | [Python SMTP Phishing Header Analysis](./Project-08-SMTP-Phishing-Analysis/) | Email header forensics SPF/DKIM/DMARC, phishing scoring | T1566 | ✅ Complete |
 
 ---
 
-## Project Structure
+## What Each Project Produces
 
-Every project follows the same folder convention and README format.
+Every project delivers the same four things:
 
+```
 Project-XX-Name/
-├── README.md
-├── baseline/
-├── scripts/
-├── logs/
-└── screenshots/
-    ├── phase01/
-    └── phase02/
+├── README.md          — SOC Tier 1 incident report
+├── scripts/           — detection or analysis tool
+├── output/            — structured report from the tool
+└── screenshots/       — visual evidence from every step
 ```
 
-Each README follows this locked structure,
+Every README follows this structure:
 
-Title, Incident Summary, Executive Summary, Affected System, Investigation Methodology, IOCs, MITRE ATT&CK Mapping, SOC Analyst Findings, SOC Analyst Response, Analyst Insight, Learning Outcome, Repository Structure, Conclusion
+> Title → Incident Summary → Executive Summary → Affected System → Investigation Methodology → IOCs → MITRE ATT&CK Mapping → SOC Analyst Findings → SOC Analyst Response → Analyst Insight → Learning Outcome → Repository Structure → Conclusion
 
 ---
 
+## Why This Suite Exists
 
-## Detection Philosophy
+Most early-career SOC candidates can run a tool. Very few can explain what the output means, tie it to a MITRE technique, write a detection that catches it, and document the chain of evidence.
 
-Every project in this suite approaches detection from the defender's perspective first.
+That gap is what this suite closes.
 
-Attack simulation is not the goal, it is the trigger. The goal is to answer,
+Each project starts with attacker thinking what would someone actually do here? and ends with defender documentation what happened, how was it caught, what was done about it, and how was the fix verified?
 
-What does this technique look like on the wire? What does it leave in logs? How do you write a rule or script that catches it reliably? How do you respond, verify the fix, and document the chain of evidence?
+That loop is the job. This suite is proof of doing it.
 
-Behavioral detection (rate, timing, pattern) is favoured over signature detection, because signatures can be evaded and behaviour cannot.
+---
+
+## Detection Approach
+
+Behavioral detection over signature detection always.
+
+Signatures describe known bad. Behavior describes how bad things move. An attacker can change a file hash, a domain name, or an IP address in seconds. They cannot change the fact that 1,000 port probes in 37 milliseconds is not human behavior.
+
+Every project in this suite looks for behavioral signals rate, timing, pattern, mismatch — rather than static rules that break the moment the attacker changes one variable.
 
 ---
 
@@ -84,18 +105,19 @@ Behavioral detection (rate, timing, pattern) is favoured over signature detectio
 
 | Tool | Purpose |
 |---|---|
-| Bash | Detection scripts and log parsing |
-| Python | Enrichment and analysis tooling |
-| tcpdump | Packet capture and pcap analysis |
-| Nmap | Attack simulation (reconnaissance) |
-| Splunk Enterprise | SIEM correlation and dashboarding |
-| UFW / iptables | Host firewall response |
-| MITRE ATT&CK | Technique mapping and documentation |
+| Python | OSINT tools, enrichment pipelines, email analysis |
+| Bash | Detection scripts, log parsing, alert generation |
+| Nmap | Attack simulation — port scanning |
+| tcpdump | Packet capture — forensic evidence |
+| Splunk Enterprise | SIEM — log correlation and dashboarding |
+| UFW / iptables | Host firewall — response and verification |
+| MITRE ATT&CK | Technique mapping across all 8 projects |
 
 ---
 
 ## Repository Structure
 
+```
 CorpOps-Shell-Suite/
 ├── README.md
 ├── Project-01-Nmap-Detection/
@@ -103,15 +125,16 @@ CorpOps-Shell-Suite/
 ├── Project-03-Tookie-OSINT-Footprint/
 ├── Project-04-UserScanner/
 ├── Project-05-IPCommander/
-├── Project-06-Whois-Spoofing/
+├── Project-06-Whois-Spoofing-Detection/
 ├── Project-07-EternalView-Recon/
-└── Project-08-SMTP-Phishing/
+└── Project-08-SMTP-Phishing-Analysis/
+```
 
 ---
 
 ## Author
 
-SOC Analyst, Blue Team, ISC2 Certified in Cybersecurity (CC)
+SOC Analyst | Blue Team | ISC2 Certified in Cybersecurity (CC)
 
 [![GitHub](https://img.shields.io/badge/GitHub-WiLL75G-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/WiLL75G)
 [![X](https://img.shields.io/badge/X-%40WilliamInCyber-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/WilliamInCyber)
