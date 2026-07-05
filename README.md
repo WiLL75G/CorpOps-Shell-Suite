@@ -1,12 +1,3 @@
-
- ██████╗ ██████╗ ██████╗ ██████╗  ██████╗ ██████╗ ███████╗
-██╔════╝██╔═══██╗██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██╔════╝
-██║     ██║   ██║██████╔╝██████╔╝██║   ██║██████╔╝███████╗
-██║     ██║   ██║██╔══██╗██╔═══╝ ██║   ██║██╔═══╝ ╚════██║
-╚██████╗╚██████╔╝██║  ██║██║     ╚██████╔╝██║     ███████║
- ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝      ╚═════╝ ╚═╝     ╚══════╝
-
-
 [![Blue Team Notes](https://img.shields.io/badge/Blue_Team_Notes-WilliamInCyber-1F6FEB?style=flat&logo=github&logoColor=white)](https://github.com/WiLL75G)
 [![Projects](https://img.shields.io/badge/Suite-8_Projects-1F6FEB?style=flat)](https://github.com/WiLL75G)
 [![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-C5221F?style=flat)](https://attack.mitre.org)
