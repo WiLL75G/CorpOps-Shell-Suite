@@ -1,0 +1,31 @@
+Return-Path: <bounce@suspicious-mailer.ru>
+Received: from suspicious-mailer.ru (suspicious-mailer.ru [185.220.101.45])
+        by mail.nexuscorp.com (Postfix) with ESMTP id 4A3F2B1C8D
+        for <james@nexuscorp.com>; Mon, 30 Jun 2026 09:15:23 +0000 (UTC)
+Received: from localhost (localhost [127.0.0.1])
+        by suspicious-mailer.ru with ESMTP id x1234abc
+        for <james@nexuscorp.com>; Mon, 30 Jun 2026 09:15:20 +0000
+Authentication-Results: mail.nexuscorp.com;
+        spf=fail (domain of paypal.com does not designate 185.220.101.45 as permitted sender)
+        smtp.mailfrom=bounce@suspicious-mailer.ru;
+        dkim=none;
+        dmarc=fail action=quarantine header.from=paypal.com
+X-Spam-Status: Yes, score=8.4
+X-Spam-Flag: YES
+Message-ID: <20260630091523.x1234abc@suspicious-mailer.ru>
+Date: Mon, 30 Jun 2026 09:15:23 +0000
+From: "PayPal Security" <security@paypal.com>
+To: james@nexuscorp.com
+Reply-To: collect@suspicious-mailer.ru
+X-Mailer: PHPMailer 5.2.0
+Subject: =?UTF-8?B?VVJHRU5UOiBZb3VyIFBheVBhbCBBY2NvdW50IEhhcyBCZWVuIExpbWl0ZWQ=?=
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+<html>
+<body>
+<p>Dear Customer,</p>
+<p>Your PayPal account has been limited. Click below to verify:</p>
+<a href="http://paypal-verify.suspicious-mailer.ru/login">Verify Account</a>
+</body>
+</html>

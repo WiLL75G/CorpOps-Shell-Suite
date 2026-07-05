@@ -1,0 +1,53 @@
+=============================================================
+  SMTP-ANALYZER -- PHISHING HEADER ANALYSIS REPORT
+  MITRE ATT&CK: T1566 (Phishing)
+=============================================================
+  File analyzed    : /home/kali/soc-08-smtp-analyzer/samples/phishing_sample.eml
+  Report generated : 2026-07-05 07:10:05
+  Phishing score   : 130/130
+  Verdict          : HIGH RISK -- likely phishing
+=============================================================
+FORENSIC FIELDS
+---------------------------------------------
+  From         : "PayPal Security" <security@paypal.com>
+  Reply-To     : collect@suspicious-mailer.ru
+  Return-Path  : <bounce@suspicious-mailer.ru>
+  To           : james@nexuscorp.com
+  Subject      : =?UTF-8?B?VVJHRU5UOiBZb3VyIFBheVBhbCBBY2NvdW50IEhhcyBCZWVuIExpbWl0ZWQ=?=
+  Date         : Mon, 30 Jun 2026 09:15:23 +0000
+  Message-ID   : <20260630091523.x1234abc@suspicious-mailer.ru>
+  X-Mailer     : PHPMailer 5.2.0
+  X-Spam-Flag  : YES
+
+  Received chain (2 hops):
+    Hop 1: from suspicious-mailer.ru (suspicious-mailer.ru [185.220.101.45])
+        by mail.nexuscorp.com (Pos
+    Hop 2: from localhost (localhost [127.0.0.1])
+        by suspicious-mailer.ru with ESMTP id x1234abc
+
+AUTHENTICATION RESULTS
+---------------------------------------------
+  SPF   : fail
+  DKIM  : none
+  DMARC : fail
+PHISHING INDICATORS
+---------------------------------------------
+  [+25] SPF FAIL  sending IP not authorized for claimed domain
+  [+20] DKIM FAIL/NONE  no cryptographic email signature
+  [+25] DMARC FAIL  email authentication policy violated
+  [+20] Reply-To domain mismatch  From: paypal.com vs Reply-To: suspicious-mailer.ru
+  [+15] Return-Path domain mismatch  From: paypal.com vs Return-Path: suspicious-mailer.ru
+  [+10] Suspicious X-Mailer detected: PHPMailer 5.2.0
+  [+15] X-Spam-Flag: YES  spam filter flagged this email
+
+  Total score : 130/130
+  Verdict     : HIGH RISK -- likely phishing
+
+ANALYST NOTES
+---------------------------------------------
+  Analysis conducted on raw email headers only.
+  T1566 defender action: block sender domain at email gateway,
+  quarantine similar messages, alert user, submit IOCs to threat intel.
+=============================================================
+  END OF REPORT
+=============================================================
