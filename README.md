@@ -5,7 +5,7 @@
 ██║     ██║   ██║██╔══██╗██╔═══╝ ██║   ██║██╔═══╝ ╚════██║
 ╚██████╗╚██████╔╝██║  ██║██║     ╚██████╔╝██║     ███████║
  ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝      ╚═════╝ ╚═╝     ╚══════╝
-```
+
 
 [![Blue Team Notes](https://img.shields.io/badge/Blue_Team_Notes-WilliamInCyber-1F6FEB?style=flat&logo=github&logoColor=white)](https://github.com/WiLL75G)
 [![Projects](https://img.shields.io/badge/Suite-8_Projects-1F6FEB?style=flat)](https://github.com/WiLL75G)
