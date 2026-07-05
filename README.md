@@ -88,7 +88,7 @@ Behavioral detection over signature detection always.
 
 Signatures describe known bad. Behavior describes how bad things move. An attacker can change a file hash, a domain name, or an IP address in seconds. They cannot change the fact that 1,000 port probes in 37 milliseconds is not human behavior.
 
-Every project in this suite looks for behavioral signals rate, timing, pattern, mismatch — rather than static rules that break the moment the attacker changes one variable.
+Every project in this suite looks for behavioral signals rate, timing, pattern, mismatch rather than static rules that break the moment the attacker changes one variable.
 
 ---
 
@@ -98,10 +98,10 @@ Every project in this suite looks for behavioral signals rate, timing, pattern, 
 |---|---|
 | Python | OSINT tools, enrichment pipelines, email analysis |
 | Bash | Detection scripts, log parsing, alert generation |
-| Nmap | Attack simulation — port scanning |
-| tcpdump | Packet capture — forensic evidence |
-| Splunk Enterprise | SIEM — log correlation and dashboarding |
-| UFW / iptables | Host firewall — response and verification |
+| Nmap | Attack simulation port scanning |
+| tcpdump | Packet capture forensic evidence |
+| Splunk Enterprise | SIEM log correlation and dashboarding |
+| UFW / iptables | Host firewall response and verification |
 | MITRE ATT&CK | Technique mapping across all 8 projects |
 
 ---
