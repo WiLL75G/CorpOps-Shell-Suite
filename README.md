@@ -42,8 +42,8 @@ The lab runs inside a fictional enterprise environment, Nexus Corp, giving each 
 | 04 | [User-Scanner Email/Username OSINT](./Project-04-UserScanner/) | T1589 Gather Victim Identity Information | ✅ Complete |
 | 05 | [IP Commands Threat Intel Enrichment](./Project-05-IPCommander/) | T1071 Application Layer Protocol | ✅ Complete |
 | 06 | [Whois Domain Spoofing Detection](./Project-06-Whois-Spoofing-Detection/) | T1566 Phishing | ✅ Complete |
-| 07 | EternalView Recon & Defense Mapping | T1595 Active Scanning | 🔄 Coming Soon |
-| 08 | Python SMTP Phishing Header Analysis | T1566 Phishing | 🔄 Coming Soon |
+| 07 | [EternalView Recon & Defense Mapping](./Project-07-EternalView-Recon/) | T1595 Active Scanning | ✅ Complete |
+| 08 | [Python SMTP Phishing Header Analysis](./Project-08-SMTP-Phishing-Analysis/) | T1566 Phishing | ✅ Complete |
 
 ---
 
@@ -59,12 +59,14 @@ Project-XX-Name/
 └── screenshots/
     ├── phase01/
     └── phase02/
+```
 
 Each README follows this locked structure,
 
 Title, Incident Summary, Executive Summary, Affected System, Investigation Methodology, IOCs, MITRE ATT&CK Mapping, SOC Analyst Findings, SOC Analyst Response, Analyst Insight, Learning Outcome, Repository Structure, Conclusion
 
 ---
+
 
 ## Detection Philosophy
 
