@@ -7,50 +7,54 @@
 
 # CorpOps Shell Suite
 
-Most cybersecurity portfolios say the same thing: "I set up a home lab and ran some tools."
+Eight investigations, eight attacker techniques, one fictional enterprise. Each project starts from attacker thinking and ends with defender documentation, and every claim is backed by an evidence artifact rather than a screenshot of a tool that ran once.
 
-This one is different.
+## At a Glance
 
-CorpOps Shell Suite is eight structured investigations, each one built around a real attacker technique, run inside a controlled lab environment, and documented the way a SOC analyst actually works not a tutorial, not a walkthrough, but a complete defender's workflow from first packet to final report.
+| Field | Detail |
+| --- | --- |
+| Work Type | Detection scripting and OSINT, defensive |
+| Projects | 8, all complete |
+| Lab | Nexus Corp, fictional enterprise |
+| Languages | Bash, Python |
+| SIEM | Splunk Enterprise |
+| MITRE Techniques | T1046, T1593, T1589, T1071, T1566, T1595 |
+| Detection Philosophy | Behavioral over signature |
+| Report Format | SOC Tier 1 incident report, per project |
 
-Every project answers four questions:
+## What This Is
 
-- What does this attack look like on the wire or in the logs?
-- How do you build a tool or script that catches it?
-- What do you do when you find it?
-- How do you prove what happened?
+CorpOps Shell Suite is eight structured investigations, each built around a real attacker technique, run inside a controlled lab, and documented the way a SOC analyst actually works: not a tutorial, not a walkthrough, but a complete defender's workflow from first packet to final report.
 
-The lab runs inside a fictional enterprise **Nexus Corp** with an attacker host, a target server, an endpoint, and a SIEM. Every project is self-contained and every README is written in SOC Tier 1 incident report format the same format a real analyst would hand to Tier 2 for escalation.
+Every project answers four questions: what does this attack look like on the wire or in the logs, how do you build a tool or script that catches or characterizes it, what do you do when you find it, and how do you prove what happened.
 
----
+The lab runs inside a fictional enterprise, Nexus Corp, with an attacker host, a target server, an endpoint, and a SIEM. Every project is self-contained, and every README is written in SOC Tier 1 incident report format, the same format a real analyst would hand to Tier 2 for escalation.
 
 ## Lab Environment
 
 | Component | Role |
-|---|---|
+| --- | --- |
 | Kali Linux (UTM VM) | Attacker simulates the threat |
 | Ubuntu Server (UTM VM) | Target the system being defended |
 | Windows 11 (UTM VM) | Endpoint simulation |
 | Splunk Enterprise (macOS host) | SIEM log analysis and alerting |
 
----
-
 ## The 8 Projects
 
 Each project covers a different attacker technique and produces a detection script or analysis tool, evidence artifacts, and a full MITRE-mapped report.
 
-| # | Project | What It Detects | MITRE | Status |
-|---|---|---|---|---|
-| 01 | [Nmap Port Scan Detection](./Project-01-Nmap-Detection/) | TCP SYN port scans across 1,000 ports in 37ms | T1046 | ✅ Complete |
-| 02 | [WebSift Web Asset Audit](./Project-02-WebSift-Audit/) | Public web footprint server versions, missing security headers | T1593 | ✅ Complete |
-| 03 | [Tookie-OSINT Digital Footprint](./Project-03-Tookie-OSINT-Footprint/) | Username presence across 8 platforms | T1589 | ✅ Complete |
-| 04 | [User-Scanner Email/Username OSINT](./Project-04-UserScanner/) | Email domain analysis, MX records, platform enumeration | T1589 | ✅ Complete |
-| 05 | [IP Commands Threat Intel Enrichment](./Project-05-IPCommander/) | IP geolocation, abuse reputation, reverse DNS | T1071 | ✅ Complete |
-| 06 | [Whois Domain Spoofing Detection](./Project-06-Whois-Spoofing-Detection/) | Typosquat domain registration phishing infrastructure | T1566 | ✅ Complete |
-| 07 | [EternalView Recon & Defense Mapping](./Project-07-EternalView-Recon/) | Active recon mapped to MITRE techniques and hardening actions | T1595 | ✅ Complete |
-| 08 | [Python SMTP Phishing Header Analysis](./Project-08-SMTP-Phishing-Analysis/) | Email header forensics SPF/DKIM/DMARC, phishing scoring | T1566 | ✅ Complete |
+| # | Project | What It Addresses | MITRE | Status |
+| --- | --- | --- | --- | --- |
+| 01 | [Nmap Port Scan Detection](./Project-01-Nmap-Detection/) | TCP SYN port scans across 1,000 ports in 37ms | T1046 | Complete |
+| 02 | [WebSift Web Asset Audit](./Project-02-WebSift-Audit/) | Public web footprint, server versions, missing security headers | T1593 | Complete |
+| 03 | [Tookie-OSINT Digital Footprint](./Project-03-Tookie-OSINT-Footprint/) | Username presence across 8 platforms | T1589 | Complete |
+| 04 | [User-Scanner Email/Username OSINT](./Project-04-UserScanner/) | Email domain analysis, MX records, platform enumeration | T1589 | Complete |
+| 05 | [IP Commands Threat Intel Enrichment](./Project-05-IPCommander/) | IP geolocation, abuse reputation, reverse DNS | T1071 | Complete |
+| 06 | [Whois Domain Spoofing Detection](./Project-06-Whois-Spoofing-Detection/) | Typosquat domain registration, phishing infrastructure | T1566 | Complete |
+| 07 | [EternalView Recon & Defense Mapping](./Project-07-EternalView-Recon/) | Active recon mapped to MITRE techniques and hardening actions | T1595 | Complete |
+| 08 | [Python SMTP Phishing Header Analysis](./Project-08-SMTP-Phishing-Analysis/) | Email header forensics, SPF/DKIM/DMARC, phishing scoring | T1566 | Complete |
 
----
+A note on the mappings: several of these tools are defensive instruments aimed at a reconnaissance technique, they characterize or defend against the attacker behavior named, rather than firing an alert on it inside a SIEM. The MITRE column names the technique each project addresses, which is the honest framing for an OSINT and audit suite.
 
 ## What Each Project Produces
 
@@ -68,43 +72,55 @@ Every README follows this structure:
 
 > Title → Incident Summary → Executive Summary → Affected System → Investigation Methodology → IOCs → MITRE ATT&CK Mapping → SOC Analyst Findings → SOC Analyst Response → Analyst Insight → Learning Outcome → Repository Structure → Conclusion
 
----
-
 ## Why This Suite Exists
 
 Most early-career SOC candidates can run a tool. Very few can explain what the output means, tie it to a MITRE technique, write a detection that catches it, and document the chain of evidence.
 
-That gap is what this suite closes.
+That gap is what this suite closes. Each project starts with attacker thinking, what would someone actually do here, and ends with defender documentation, what happened, how was it caught, what was done about it, and how was the fix verified.
 
-Each project starts with attacker thinking what would someone actually do here? and ends with defender documentation what happened, how was it caught, what was done about it, and how was the fix verified?
-
-That loop is the job. This suite is proof of doing it.
-
----
+That loop is the job. This suite is proof of doing it, eight times, on eight different techniques.
 
 ## Detection Approach
 
-Behavioral detection over signature detection always.
+Behavioral detection over signature detection, always.
 
 Signatures describe known bad. Behavior describes how bad things move. An attacker can change a file hash, a domain name, or an IP address in seconds. They cannot change the fact that 1,000 port probes in 37 milliseconds is not human behavior.
 
-Every project in this suite looks for behavioral signals rate, timing, pattern, mismatch rather than static rules that break the moment the attacker changes one variable.
+Every project looks for behavioral signals, rate, timing, pattern, mismatch, rather than static rules that break the moment the attacker changes one variable. That choice is the difference between a detection that survives contact with a real adversary and one that does not.
 
----
+## The SOC Angle
+
+This suite is where the reconnaissance side of the job lives, and reconnaissance is the phase most detection portfolios skip.
+
+By the time an attack reaches the brute force and payload stage covered in the detection-engineering labs, the attacker already knows the target. These eight projects sit earlier: mapping a web footprint, enumerating a username, checking a domain for typosquatting, enriching an IP. It is the same instinct the rest of the portfolio runs on, understand the attacker's move before you defend against it, pointed at the phase before the alert fires.
+
+The behavioral-over-signature stance is the through-line. It is the same reason the Suricata rules threshold on rate rather than match on a fixed string: a defender who chases signatures is always one variable behind.
+
+## What This Demonstrates
+
+Building detection and OSINT tools in both Bash and Python, not just running existing ones.
+
+Mapping eight distinct attacker techniques to MITRE ATT&CK and framing each honestly.
+
+Choosing behavioral signals over brittle signatures, and explaining why.
+
+Producing a self-contained SOC Tier 1 incident report for every investigation.
+
+Covering the reconnaissance phase most detection portfolios leave out.
+
+Keeping a consistent evidence standard, script, output, and screenshots, across all eight projects.
 
 ## Stack
 
 | Tool | Purpose |
-|---|---|
+| --- | --- |
 | Python | OSINT tools, enrichment pipelines, email analysis |
 | Bash | Detection scripts, log parsing, alert generation |
-| Nmap | Attack simulation port scanning |
-| tcpdump | Packet capture forensic evidence |
+| Nmap | Attack simulation, port scanning |
+| tcpdump | Packet capture, forensic evidence |
 | Splunk Enterprise | SIEM log correlation and dashboarding |
 | UFW / iptables | Host firewall response and verification |
 | MITRE ATT&CK | Technique mapping across all 8 projects |
-
----
 
 ## Repository Structure
 
@@ -120,8 +136,6 @@ CorpOps-Shell-Suite/
 ├── Project-07-EternalView-Recon/
 └── Project-08-SMTP-Phishing-Analysis/
 ```
-
----
 
 ## Author
 
