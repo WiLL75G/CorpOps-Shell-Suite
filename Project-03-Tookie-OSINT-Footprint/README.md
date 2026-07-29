@@ -171,7 +171,7 @@ Communicating uncertainty honestly, flagging an inconclusive result rather than 
 ## Repository Structure
 
 ```
-soc-03-tookie-osint/
+Project-03-Tookie-OSINT-Footprint/
 ├── README.md
 ├── scripts/
 │   └── tookie.py

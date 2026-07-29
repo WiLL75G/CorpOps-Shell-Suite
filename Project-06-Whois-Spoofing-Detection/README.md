@@ -167,7 +167,7 @@ Implementing WHOIS rate-limiting in the tool itself, demonstrating responsible q
 ## Repository Structure
 
 ```
-Project-06-WhoisGuard/
+Project-06-Whois-Spoofing-Detection/
 ├── README.md
 ├── scripts/
 │   └── whois-guard.py

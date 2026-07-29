@@ -149,7 +149,7 @@ Practicing disciplined scope and authorization documentation appropriate to OSIN
 ## Repository Structure
 
 ```
-soc-02-websift-web-asset-audit/
+Project-02-WebSift-Audit/
 ├── README.md
 ├── tools/
 │   └── websift.py            # the custom four-module auditor
