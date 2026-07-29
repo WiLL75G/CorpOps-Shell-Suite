@@ -1,174 +1,197 @@
-# WebSift Public Web Footprint Auditor (MITRE T1593)
+# Tookie-OSINT: Digital Footprint Auditor (MITRE T1589)
 
-> A custom-built defensive OSINT tool that audits the public web footprint of a target, the same reconnaissance an attacker performs first, run proactively by the blue team. Built from scratch in Python as part of the CorpOps Shell Suite.
+> Built a custom Python OSINT tool from scratch that maps a target's public digital footprint across platforms, the same identity enumeration an adversary performs before attacking, run proactively by the defender.
 
-Two targets, seconds apart: a hardened control that disclosed almost nothing, and a live host that volunteered its exact server version (Apache/2.4.7) and scored 0 of 6 on security headers. The gap between those two footprints is the entire argument for auditing your own before an attacker does.
+One username, eight platforms, three seconds: three confirmed public profiles, each leaking a different category of intelligence, and one rate-limited response the tool was careful enough not to call an absence. That last distinction, a 429 is not a 404, is the whole difference between automation and analysis.
 
 ## At a Glance
 
 | Field | Detail |
 | --- | --- |
 | Work Type | Defensive OSINT tooling, Python |
-| Tool | WebSift, four modules, built from scratch |
-| Control Target | example.com, minimal disclosure |
-| Live Target | scanme.nmap.org, authorized |
-| Key Finding | Apache/2.4.7 leaked, 0/6 security headers |
-| Environment | Kali, Python 3.13, requests 2.32 |
-| MITRE | T1593, addressed defensively |
-| Posture | Passive, read-only, scoped and authorized |
+| Tool | Tookie-OSINT, three modules, built from scratch |
+| Target | WiLL75G, authorized self-audit |
+| Platforms Checked | 8 |
+| Profiles Confirmed | 3, GitHub, Reddit, HackerNews |
+| Key Nuance | TryHackMe 429, flagged inconclusive not absent |
+| Environment | Kali, Python 3, requests |
+| MITRE | T1589, run as an authorized self-audit |
 
 ## What This Is
 
-A defensive reconnaissance audit answering the one question a CISO cares about: what can an attacker learn about us from public sources, without ever touching our network.
+Before an attacker sends a single packet to your network, they know who works there, what platforms those people use, what they post publicly, and what their technical interests reveal about the organization's stack.
 
-To answer it, a purpose-built tool, WebSift, was developed from scratch and used to enumerate the public footprint of a web target: disclosed technology, exposed crawl directives, and missing security controls. All activity was passive and limited to information the target already serves publicly. Findings were analyzed from a defender's perspective and translated into hardening recommendations.
+MITRE ATT&CK T1589 (Gather Victim Identity Information) describes this phase. It is passive, free, and leaves no trace on the victim's systems. If a defender has not audited their own identity exposure, the attacker already has an information advantage before anything else happens.
+
+Tookie-OSINT was built to run that enumeration from the defender's side: a three-module Python tool that takes a username, checks for confirmed presence across eight platforms, generates targeted Google dork queries for deeper manual research, and produces a structured footprint report. It was run against the analyst's own public username `WiLL75G` as an authorized self-audit.
 
 ## Executive Summary
 
-Reconnaissance is the first phase of nearly every intrusion, and MITRE ATT&CK T1593 (Search Open Websites/Domains) is among the cheapest steps an adversary can take: no packets to the victim's network, just queries against public sources. If an organization has not audited its own footprint, the attacker has effectively won the reconnaissance round before any alert could fire.
+Identity reconnaissance is among the cheapest steps in an attacker's playbook. A username checked against eight platforms takes seconds, and the platforms themselves do the work, serving public profile pages to anyone who requests them.
 
-To operationalize this defensively, WebSift was built as a four-module Python tool that, given a target URL, performs HTTP technology fingerprinting (identifying disclosed server/stack details and flagging version numbers, which map directly to known CVEs), robots.txt and sitemap.xml parsing (surfacing paths the site publishes to crawlers, which often act as a map to sensitive locations), and security-header auditing (checking six recommended protective headers and reporting gaps as an actionable checklist).
+Tookie-OSINT turns that into a defender's tool through three sequential modules: a platform presence checker (HTTP requests to each platform's public profile URL, with the response code interpreted, 200 is a confirmed profile, 404 a confirmed absence, 403 access-restricted rather than absent, 429 rate-limited and therefore inconclusive), a Google dork generator (ten targeted queries across platforms, document types, credential exposure, and API-key leakage), and a report generator (structured plain-text output saved to disk).
 
-The tool was validated against a hardened control (`example.com`), which disclosed minimal information, then run against an authorized real-world target (`scanme.nmap.org`). The contrast was the point: the control disclosed almost nothing, while the real target leaked its exact web server version (Apache/2.4.7 (Ubuntu)) and was missing all six recommended security headers. Both results were produced in seconds, showing how quickly an attacker maps an under-hardened footprint, and why defenders must do it first.
+Against `WiLL75G`, the tool confirmed three public profiles with meaningful attacker value across code exposure, post history, and technical commentary, and correctly flagged a rate-limited response from TryHackMe as inconclusive rather than absent. That last behavior is the one that matters most, and it is covered below.
 
-## Affected System (Audited Targets)
+## Audit Target
 
-| Role | Target | Purpose |
-| --- | --- | --- |
-| Control (hardened baseline) | `https://example.com` | IANA-reserved domain used to establish what a minimal-disclosure footprint looks like |
-| Authorized live target | `http://scanme.nmap.org` | A host explicitly sanctioned by its operator for scanning and testing |
+| Attribute | Value |
+| --- | --- |
+| Target username | `WiLL75G` |
+| Audit type | Passive OSINT, authorized self-audit |
+| Platforms checked | 8 |
+| Profiles confirmed | 3 |
+| Tool | `tookie.py`, custom Python, built from scratch |
+| Environment | Kali Linux, Python 3, `requests` library |
 
-**Tooling environment:** Kali Linux (analyst workstation), Python 3.13, `requests` 2.32. WebSift authored from scratch; no third-party scanning tools used.
+## Scope and Authorization
 
-## Scope & Authorization
+This audit was conducted against the analyst's own public username. All checks used only HTTP GET requests to publicly accessible profile URLs, the same requests any browser makes when visiting a profile page. No authentication, exploitation, brute-forcing, or scraping of protected content was performed.
 
-This audit was conducted strictly against targets that are either purpose-built for testing (`example.com`, IANA-reserved for documentation) or explicitly authorized for scanning by their operator (`scanme.nmap.org`). WebSift performs only passive, read-only requests for resources the target already serves publicly. It performs no authentication, no exploitation, no brute-forcing, and no active vulnerability probing.
-
-Public availability of data does not imply authorization to test arbitrary systems. Documenting scope is a deliberate part of the methodology, not a disclaimer bolted on afterward, and in reconnaissance work it is the line between an audit and an offense.
+Running this tool against usernames you do not own or have explicit authorization to audit is outside the scope of this project and may violate platform terms of service or applicable law.
 
 ## Investigation Methodology
 
-### 1. Built the HTTP fetch core (Module 1)
+### 1. Environment and Tool Setup
 
-Authored a Python class that fetches a target once and stores the response for all subsequent analysis, minimizing requests to the target. The fetch routine uses an honest User-Agent, a request timeout, and graceful handling of timeout, connection, and other failure modes, so the tool reports problems cleanly rather than crashing.
+Verified Python 3 and the `requests` library, created the project folder structure, and confirmed the development environment on Kali Linux.
 
-*Evidence: `websift_module1_fetch_test.png`*
+*Screenshot: `02_python_environment.png`*
 
-**Analyst note**
+### 2. Built the Tool Foundation (tookie.py skeleton)
 
-Building the fetch core as a reusable foundation, one request feeding many analyses, is both an engineering decision and an ethical one. It avoids hammering the target with redundant requests, which is exactly the restraint that separates a defensive audit from a nuisance.
+Authored the script header, argument parser (`-u` for username, `-o` for output file), and entry point. Ran a smoke test to confirm the banner and INFO block rendered correctly before adding any OSINT logic.
 
-### 2. Implemented technology fingerprinting (Module 2)
-
-Added analysis of response headers that commonly disclose technology and version information (`Server`, `X-Powered-By`, and similar). The module flags any value containing a version number, since exact versions map directly to known CVEs.
-
-*Evidence: `websift_module2_header_fingerprint.png`*
-
-**Finding (control target):** `example.com` disclosed only `Server: cloudflare`, a generic CDN identifier with no version. This established the good-footprint baseline.
-
-### 3. Implemented robots.txt & sitemap.xml parsing (Module 3)
-
-Added targeted retrieval and parsing of the two files sites publish for crawlers. `Disallow:` entries are highlighted, because administrators frequently list sensitive paths there to hide them from search engines, but the file is public, so it can become a map for an attacker.
-
-*Evidence: `websift_module3_robots_sitemap.png`*
+*Screenshot: `03_tookie_foundation.png`*
 
 **Analyst note**
 
-The module treats absence as a clean, reported result rather than an error, demonstrating defensive handling of the common file-not-present case. A tool that crashes on a missing file cannot be trusted to run unattended.
+Building a clean foundation before adding modules enforces the discipline of separating concerns, each module does one thing and returns structured data to `main()`. This makes the tool easier to extend and easier to audit, which is the same reason production code is written this way and throwaway scripts are not.
 
-### 4. Implemented security-header auditing (Module 4)
+### 3. Module 1: Platform Presence Checker
 
-Added a check for six recommended security headers (HSTS, CSP, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy), producing a present/missing score and an actionable hardening checklist, the most directly defensive output of the tool.
+Added HTTP GET checks against eight platforms using an honest User-Agent and a 6-second timeout. Each response code is interpreted and classified:
 
-*Evidence: `websift_full_audit_scanme_2.png`*
+| HTTP Code | Classification | Analyst Meaning |
+| --- | --- | --- |
+| 200 | FOUND | Profile confirmed and publicly accessible |
+| 404 | NOT FOUND | Profile does not exist on this platform |
+| 403 | NOT FOUND (restricted) | Access denied, may exist but not publicly accessible |
+| 429 | TIMEOUT/ERROR | Rate-limited, existence inconclusive, manual check required |
 
-### 5. Validated against a control, then ran the live audit
+*Screenshot: `06a_module1_platform_results.png`*
 
-Ran the complete four-module tool against the hardened control (`example.com`) and then the authorized live target (`scanme.nmap.org`), comparing the disclosure profiles.
+**Findings:**
 
-*Evidence: `websift_full_audit_scanme_1.png`, `websift_full_audit_scanme_2.png`*
+| Platform | Result | HTTP Code |
+| --- | --- | --- |
+| GitHub | FOUND | 200 |
+| Reddit | FOUND | 200 |
+| HackerNews | FOUND | 200 |
+| TryHackMe | Inconclusive | 429 (rate-limited) |
+| GitLab | Not found | 403 |
+| Medium | Not found | 403 |
+| Keybase | Not found | 404 |
+| Dev.to | Not found | 404 |
 
-**Finding (live target):** `scanme.nmap.org` disclosed `Server: Apache/2.4.7 (Ubuntu)` (exact version) and scored 0/6 on security headers.
+### 4. Module 2: Google Dork Generator
 
-## Findings & Indicators
+Added generation of ten targeted dork queries covering platform presence, document exposure, paste sites, credential mentions, and API-key leakage, all tied to the target username.
 
-| Category | Control (`example.com`) | Live target (`scanme.nmap.org`) | Defender significance |
-| --- | --- | --- | --- |
-| Server disclosure | `cloudflare` (generic) | `Apache/2.4.7 (Ubuntu)` | Exact version → direct CVE lookup |
-| Version leaked? | No | Yes | Removes attacker guesswork |
-| robots.txt | None | None | No path disclosure in either case |
-| sitemap.xml | None | None | No structure disclosure |
-| Security headers | Behind hardened CDN | 0 / 6 present | No browser-side defenses |
+*Screenshot: `06b_module2_dork_queries.png`*
 
-**Key disclosed indicators (live target):**
-- Web server software and version: `Apache/2.4.7 (Ubuntu)`
-- Missing controls: Strict-Transport-Security, Content-Security-Policy, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy
+**Analyst note**
+
+The dork generator is deliberately passive, it produces queries for manual execution rather than automating searches, giving the analyst full control over what gets queried and when. Dorks [08]–[10] (`intext:"password"`, `"API key"`, `"access token"`) are the highest-value from a defensive standpoint: if they return results, there is a credential or secret exposure that requires immediate action.
+
+### 5. Module 3: Report Generator
+
+Added a structured report consolidating platform results, confirmed profile URLs, dork queries, and analyst notes into a plain-text file written to `output/`. The `-o` flag triggers the file write; without it the report prints to terminal only.
+
+*Screenshots: `06c_module3_footprint_report.png`, `07a_output_file.png`, `07b_output_file.png`*
+
+## Digital Footprint Findings (Exposed Indicators)
+
+| Platform | Confirmed URL | Attacker Intelligence Value |
+| --- | --- | --- |
+| GitHub | `https://github.com/WiLL75G` | Repository names, commit history, programming languages, potential email address in commits |
+| Reddit | `https://www.reddit.com/user/WiLL75G` | Post and comment history, subreddit memberships, interests, account age |
+| HackerNews | `https://news.ycombinator.com/user?id=WiLL75G` | Technical commentary, interests, professional context |
+
+**TryHackMe (429 inconclusive):** The platform returned a rate-limit response rather than a 404. The profile may exist. Manual verification required.
+
+**Generated dork queries:** 10 queries across platform presence, document exposure (`filetype:pdf`, `filetype:doc`), paste sites, credential mentions, and API-key searches.
 
 ## MITRE ATT&CK Mapping
 
-| Tactic | Technique | ID | Application in this Audit |
+| Tactic | Technique | ID | Application |
 | --- | --- | --- | --- |
-| Reconnaissance | Search Open Websites/Domains | T1593 | Public, passive collection of a target's disclosed technology, crawl directives, and security posture, the information an adversary gathers before any direct interaction with the victim network. Run here defensively, by the blue team, first. |
+| Reconnaissance | Gather Victim Identity Information | T1589 | Passive enumeration of a target username's public presence across platforms, the identity mapping an adversary performs before any direct network interaction. Run here defensively, as an authorized self-audit. |
 
 ## Findings
 
-- The live target discloses its exact web server version, removing an attacker's need to guess and enabling direct mapping to known CVEs for that build.
-- The live target presents no recommended security headers, indicating minimal browser-side hardening and a weaker posture against downgrade, clickjacking, MIME-sniffing, and cross-site scripting classes of attack.
-- Neither target exposed `robots.txt` or `sitemap.xml`, so no crawl-path or structural disclosure occurred.
-- The hardened control demonstrates that minimal disclosure is achievable: a generic CDN-fronted footprint reveals neither version nor origin details.
+- Three public profiles confirmed: GitHub, Reddit, HackerNews, each exposing a distinct intelligence category (code, social, technical commentary).
+- GitHub exposes the most operationally sensitive data: repository names reveal technologies in use, commit history may expose email addresses, and public repos may contain secrets committed accidentally.
+- TryHackMe returned 429 (rate-limited), not 404. The profile may exist. The tool correctly classified this as inconclusive rather than absent. Manual verification recommended.
+- No credential or API-key exposure detected in this run, dork queries [08]–[10] should be run manually to confirm.
+- Username `WiLL75G` is consistent across confirmed platforms, so an attacker correlating identity across platforms has a high-confidence match.
 
-## Response & Recommendations
+## Response
 
-For a real organization presenting the live target's profile, the defensive actions would be:
+For an organization auditing employee or service-account usernames:
 
-1. Suppress version disclosure, configuring the web server or fronting CDN to emit a generic `Server` header without a version string, so reconnaissance cannot map exact CVEs.
-2. Add the six recommended security headers at the server or CDN layer, prioritizing HSTS (forces HTTPS), CSP (mitigates XSS), and X-Frame-Options (mitigates clickjacking).
-3. Front the origin with a CDN or proxy where feasible, as the control target does, to shield origin software and version details.
-4. Adopt proactive footprint auditing as a recurring control, so disclosure regressions are caught by the defender before an adversary finds them.
+1. Review GitHub email visibility settings, commit history can expose email addresses even when the profile hides them.
+2. Audit Reddit and HackerNews post history for sensitive organizational information, technology disclosures, or security questions.
+3. Manually verify any 429 responses, rate-limited platforms require a browser check to confirm presence or absence.
+4. Run the credential dork queries (`intext:"password"`, `"API key"`, `"access token"`) manually and investigate any results immediately.
+5. Run Tookie-OSINT on a recurring schedule against critical usernames, exposure changes as users create accounts, post content, or commit code.
 
 ## The SOC Angle
 
-The most valuable outcome was not any single finding, it was the demonstration that footprint disclosure is a spectrum, and that the difference between a hardened and an under-hardened posture is visible in seconds to anyone, attacker or defender.
+The most instructive moment in this audit was the TryHackMe 429.
 
-Building the tool from scratch reinforced the core lesson: defensive reconnaissance is not about exotic capability, it is about systematically looking at what you already expose. The contrast between a CDN-fronted control that disclosed almost nothing and a legacy host that volunteered its exact Apache version made the abstract risk of T1593 concrete.
+A less careful tool, or a less careful analyst, classifies that as "not found" and moves on. But it is not not-found. It is rate-limited, which means the platform detected automated querying and refused to answer, so the profile may well exist. That single distinction is the difference between a closed gap and an open one that was merely mislabeled closed.
 
-That is the whole move. A defender who runs this audit first turns an attacker's cheapest advantage into a closed gap, and does it during a quiet afternoon rather than during an incident.
+It is also the reminder that tool output requires interpretation. HTTP response codes are not binary. 403 is not 404, and 429 is neither. A tool that flattens all three into "absent" is confidently wrong a third of the time. Building one that classifies responses correctly and communicates uncertainty where it exists is the line between automation and analysis, and it is the same instinct that separates a Tier 1 analyst who closes tickets from one who closes them correctly.
 
 ## What This Demonstrates
 
-Designing and building a multi-module security tool from scratch in Python, with reusable architecture, CLI arguments, and graceful error handling.
+Building a modular, production-shaped Python OSINT tool from scratch with argument parsing, graceful error handling, and file output.
 
-Translating an offensive reconnaissance technique (T1593) into a defensive, authorized, scoped audit.
+Interpreting HTTP response codes as a core analyst skill, 200, 403, 404, and 429 each carry distinct defensive meaning.
 
-Interpreting HTTP technology and security headers from a defender's perspective, connecting disclosure to concrete attacker advantage (CVE mapping) and concrete hardening actions.
+Translating MITRE T1589 from an offensive technique into an authorized, scoped defensive audit.
 
-Using a hardened control target to establish a baseline, then measuring a real target against it, a comparative methodology that strengthens any finding.
+Producing structured report output suitable for evidence documentation and README integration.
 
-Practicing disciplined scope and authorization documentation appropriate to OSINT and reconnaissance work.
+Demonstrating that passive reconnaissance yields actionable intelligence without any network interaction with the target, which is exactly why defenders must audit their own footprint first.
+
+Communicating uncertainty honestly, flagging an inconclusive result rather than forcing it into a clean yes or no.
 
 ## Repository Structure
 
 ```
-soc-02-websift-web-asset-audit/
+soc-03-tookie-osint/
 ├── README.md
-├── tools/
-│   └── websift.py            # the custom four-module auditor
-├── output/                   # saved scan output (optional)
-├── reports/                  # written report / PDF
+├── scripts/
+│   └── tookie.py
+├── output/
+│   └── WiLL75G_footprint.txt
+├── reports/
 └── screenshots/
-    ├── websift_environment_check.png
-    ├── websift_requests_check.png
-    ├── websift_project_structure.png
-    ├── websift_module1_fetch_test.png
-    ├── websift_module2_header_fingerprint.png
-    ├── websift_module3_robots_sitemap.png
-    ├── websift_full_audit_scanme_1.png
-    └── websift_full_audit_scanme_2.png
+    ├── 01_folder_structure.png
+    ├── 02_python_environment.png
+    ├── 03_tookie_foundation.png
+    ├── 06a_module1_platform_results.png
+    ├── 06b_module2_dork_queries.png
+    ├── 06c_module3_footprint_report.png
+    ├── 07a_output_file.png
+    └── 07b_output_file.png
 ```
 
 ## Conclusion
 
-WebSift demonstrates defensive reconnaissance end to end: a custom tool, built from scratch, used to audit a target's public footprint exactly as an attacker would, but proactively, with scope and authorization, and with findings turned into hardening actions. The comparative result, a minimal-disclosure control versus a version-leaking, header-less live target, makes the value of MITRE T1593 awareness tangible: the cheapest step in an attacker's playbook is also the easiest for a defender to take first. Auditing your own footprint before someone else does is among the highest-leverage moves a blue team can make.
+Tookie-OSINT demonstrates defensive identity reconnaissance end to end: a custom tool built from scratch, run against an authorized target, with every finding interpreted through an analyst's lens rather than accepted as raw tool output. Three confirmed profiles in seconds, without a single packet reaching a protected system, makes the cost of T1589 concrete. The distinction between a 404, a 403, and a 429 is not a technical footnote, it is the difference between a confirmed absence and an open question. Building a tool that handles that distinction correctly, and knowing how to respond to each, is what separates analyst thinking from script execution.
 
 ---
 
