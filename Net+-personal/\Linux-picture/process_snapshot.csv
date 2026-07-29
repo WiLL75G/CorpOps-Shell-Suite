@@ -1,0 +1,459 @@
+"Name","Id","Path","StartTime","CPU"
+"","0",,,
+"AccessibilityUIServer","1047","/System/Library/CoreServices/AccessibilityUIServer.app/Contents/MacOS/AccessibilityUIServer","5/18/2026 11:22:54 PM","13.1608375"
+"accessoryupdaterd","84484","/System/Library/PrivateFrameworks/MobileAccessoryUpdater.framework/Support/accessoryupdaterd",,
+"accountsd","978","/System/Library/Frameworks/Accounts.framework/Versions/A/Support/accountsd","5/18/2026 11:22:50 PM","376.0452541"
+"adid","83891","/System/Library/PrivateFrameworks/CoreADI.framework/Versions/A/adid",,
+"AirDrop","71292","/System/Library/PrivateFrameworks/FinderKit.framework/Versions/A/PlugIns/AirDrop.appex/Contents/MacOS/AirDrop","5/21/2026 6:41:36 AM","74.5704208"
+"AirPlayUIAgent","1361","/System/Library/CoreServices/AirPlayUIAgent.app/Contents/MacOS/AirPlayUIAgent","5/18/2026 11:39:11 PM","7.9555708"
+"AirPlayXPCHelper","593","/usr/libexec/AirPlayXPCHelper",,
+"airportd","636","/usr/libexec/airportd",,
+"akd","988","/System/Library/PrivateFrameworks/AuthKit.framework/Versions/A/Support/akd","5/18/2026 11:22:51 PM","73.0140375"
+"AMPDeviceDiscoveryAgent","1242","/System/Library/PrivateFrameworks/AMPDevices.framework/Versions/A/Support/AMPDeviceDiscoveryAgent","5/18/2026 11:38:49 PM","2.5634833"
+"amsaccountsd","84194","/System/Library/PrivateFrameworks/AppleMediaServices.framework/Versions/A/Resources/amsaccountsd","6/3/2026 5:00:03 PM","0.7596791"
+"amsengagementd","25635","/System/Library/PrivateFrameworks/AppleMediaServicesUI.framework/amsengagementd","5/21/2026 1:47:41 AM","48.1586541"
+"analyticsagent","84180","/System/Library/PrivateFrameworks/CoreAnalytics.framework/Support/analyticsagent","6/3/2026 5:00:01 PM","0.1374625"
+"analyticsd","605","/System/Library/PrivateFrameworks/CoreAnalytics.framework/Support/analyticsd",,
+"aned","33173","/usr/libexec/aned",,
+"apfsd","618","/usr/libexec/apfsd",,
+"appleaccountd","84111","/usr/libexec/appleaccountd","6/3/2026 4:59:52 PM","0.1921875"
+"appleeventsd","759","/System/Library/CoreServices/appleeventsd",,
+"appleh13camerad","695","/usr/sbin/appleh13camerad",,
+"AppleSpell","15821","/System/Library/Services/AppleSpell.service/Contents/MacOS/AppleSpell","5/21/2026 1:03:08 AM","46.0352791"
+"AppPredictionIntentsHelperService","84754","/System/Library/PrivateFrameworks/AppPredictionFoundation.framework/Versions/A/XPCServices/AppPredictionIntentsHelperService.xpc/Contents/MacOS/AppPredictionIntentsHelperService","6/3/2026 5:01:51 PM","0.5903208"
+"apsd","566","/System/Library/PrivateFrameworks/ApplePushService.framework/apsd",,
+"AquaAppearanceHelper","62820","/System/Library/PrivateFrameworks/SkyLight.framework/Versions/A/Resources/AquaAppearanceHelper.app/Contents/MacOS/AquaAppearanceHelper","6/3/2026 3:12:44 PM","0.3370583"
+"assessmentagent","84112","/usr/libexec/assessmentagent","6/3/2026 4:59:53 PM","0.0935083"
+"AssetCache","84512","/usr/libexec/AssetCache/AssetCache",,
+"AssetCacheLocatorService","83897","/System/Library/PrivateFrameworks/AssetCacheServices.framework/Versions/A/XPCServices/AssetCacheLocatorService.xpc/Contents/MacOS/AssetCacheLocatorService","6/3/2026 4:59:20 PM","0.1020666"
+"AssetCacheLocatorService","84510","/System/Library/PrivateFrameworks/AssetCacheServices.framework/Versions/A/XPCServices/AssetCacheLocatorService.xpc/Contents/MacOS/AssetCacheLocatorService",,
+"AssetCacheTetheratorService","84513","/System/Library/PrivateFrameworks/AssetCacheServicesExtensions.framework/Versions/A/XPCServices/AssetCacheTetheratorService.xpc/Contents/MacOS/AssetCacheTetheratorService",,
+"assistantd","75415","/System/Library/PrivateFrameworks/AssistantServices.framework/Versions/A/Support/assistantd","6/3/2026 4:37:56 PM","2.9823541"
+"audioaccessoryd","87167","/System/Library/CoreServices/audioaccessoryd","6/1/2026 3:18:57 AM","25.6527166"
+"audioanalyticsd","83972","/usr/libexec/audioanalyticsd",,
+"audioclocksyncd","671","/usr/libexec/audioclocksyncd",,
+"audiomxd","656","/usr/libexec/audiomxd",,
+"authd","654","/System/Library/Frameworks/Security.framework/Versions/A/XPCServices/authd.xpc/Contents/MacOS/authd",,
+"AuthenticationServicesAgent","46224","/System/Volumes/Preboot/Cryptexes/App/usr/libexec/AuthenticationServicesAgent","5/21/2026 4:05:31 AM","14.8345375"
+"autofsd","575","/usr/libexec/autofsd",,
+"automountd","1243","/usr/libexec/automountd",,
+"avconferenced","1222","/usr/libexec/avconferenced","5/18/2026 11:38:48 PM","8.4279916"
+"axassetsd","84855","/System/Library/PrivateFrameworks/AXAssetLoader.framework/Support/axassetsd","6/3/2026 5:02:11 PM","0.9269416"
+"backupd","82825","/System/Library/CoreServices/TimeMachine/backupd",,
+"BatteriesAvocadoWidgetExtension","1403","/System/Library/CoreServices/Batteries.app/Contents/PlugIns/BatteriesAvocadoWidgetExtension.appex/Contents/MacOS/BatteriesAvocadoWidgetExtension","5/18/2026 11:39:19 PM","0.0664291"
+"BiomeAgent","49926","/System/Library/PrivateFrameworks/BiomeStreams.framework/Support/BiomeAgent","5/21/2026 4:26:26 AM","614.02505"
+"biomed","84108","/System/Library/PrivateFrameworks/BiomeStreams.framework/Support/biomed",,
+"biometrickitd","84236","/usr/libexec/biometrickitd",,
+"bird","84764","/System/Library/PrivateFrameworks/iCloudDriveCore.framework/Versions/A/Support/bird","6/3/2026 5:01:53 PM","0.28155"
+"bluetoothd","589","/usr/sbin/bluetoothd",,
+"Brave Browser","6138","/Applications/Brave Browser.app/Contents/MacOS/Brave Browser","5/31/2026 2:32:52 AM","6113.1909875"
+"Brave Browser Helper","6191","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper.app/Contents/MacOS/Brave Browser Helper","5/31/2026 2:33:01 AM","4023.1636041"
+"Brave Browser Helper","6192","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper.app/Contents/MacOS/Brave Browser Helper","5/31/2026 2:33:01 AM","972.7606208"
+"Brave Browser Helper","6193","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper.app/Contents/MacOS/Brave Browser Helper","5/31/2026 2:33:01 AM","26.2521083"
+"Brave Browser Helper","6453","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper.app/Contents/MacOS/Brave Browser Helper","5/31/2026 2:33:50 AM","34.5870583"
+"Brave Browser Helper","6454","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper.app/Contents/MacOS/Brave Browser Helper","5/31/2026 2:33:50 AM","26.69255"
+"Brave Browser Helper (Renderer)","1784","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","6/3/2026 12:35:39 AM","73.4964"
+"Brave Browser Helper (Renderer)","6202","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 2:33:01 AM","660.1263375"
+"Brave Browser Helper (Renderer)","6203","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 2:33:01 AM","98.1164625"
+"Brave Browser Helper (Renderer)","6204","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 2:33:01 AM","458.2800541"
+"Brave Browser Helper (Renderer)","6239","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 2:33:06 AM","89.1612375"
+"Brave Browser Helper (Renderer)","6272","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 2:33:11 AM","292.26795"
+"Brave Browser Helper (Renderer)","6289","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 2:33:16 AM","18.3893416"
+"Brave Browser Helper (Renderer)","6316","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 2:33:20 AM","4457.5118083"
+"Brave Browser Helper (Renderer)","6377","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 2:33:37 AM","15.0418416"
+"Brave Browser Helper (Renderer)","6380","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 2:33:38 AM","23.220875"
+"Brave Browser Helper (Renderer)","6401","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 2:33:41 AM","1598.4947541"
+"Brave Browser Helper (Renderer)","6435","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 2:33:45 AM","266.2410791"
+"Brave Browser Helper (Renderer)","6456","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 2:33:50 AM","301.4806666"
+"Brave Browser Helper (Renderer)","6479","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 2:33:53 AM","251.1767833"
+"Brave Browser Helper (Renderer)","6596","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 2:34:09 AM","3440.0500916"
+"Brave Browser Helper (Renderer)","6657","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 2:34:26 AM","1245.9547666"
+"Brave Browser Helper (Renderer)","6659","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 2:34:26 AM","322.5147208"
+"Brave Browser Helper (Renderer)","6693","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 2:34:34 AM","329.2762291"
+"Brave Browser Helper (Renderer)","6694","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 2:34:34 AM","68.9931375"
+"Brave Browser Helper (Renderer)","6720","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 2:34:40 AM","16.4067083"
+"Brave Browser Helper (Renderer)","6740","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 2:34:42 AM","24.2359916"
+"Brave Browser Helper (Renderer)","6747","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 2:34:44 AM","101.5661791"
+"Brave Browser Helper (Renderer)","6749","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 2:34:44 AM","109.6781791"
+"Brave Browser Helper (Renderer)","28715","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 5:11:46 AM","18.4972083"
+"Brave Browser Helper (Renderer)","29403","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 5:14:27 AM","14.8855583"
+"Brave Browser Helper (Renderer)","37514","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 5:56:54 AM","432.4174791"
+"Brave Browser Helper (Renderer)","53749","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","6/1/2026 10:40:37 AM","125.6906875"
+"Brave Browser Helper (Renderer)","66633","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","6/2/2026 12:58:24 PM","18.711375"
+"Brave Browser Helper (Renderer)","69858","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","5/31/2026 9:44:24 AM","1841.8139916"
+"Brave Browser Helper (Renderer)","99933","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer)","6/2/2026 12:36:22 AM","1049.7737458"
+"BTLEServerAgent","29614","/usr/sbin/BTLEServerAgent","6/3/2026 11:43:07 AM","1.2429041"
+"calaccessd","84863","/System/Library/PrivateFrameworks/CalendarDaemon.framework/Support/calaccessd","6/3/2026 5:02:13 PM","0.4982791"
+"CalendarWidgetExtension","1387","/System/Applications/Calendar.app/Contents/PlugIns/CalendarWidgetExtension.appex/Contents/MacOS/CalendarWidgetExtension","5/18/2026 11:39:15 PM","0.9177333"
+"callservicesd","38387","/System/Library/PrivateFrameworks/TelephonyUtilities.framework/callservicesd","6/3/2026 1:32:46 PM","3.6255041"
+"cameracaptured","760","/usr/libexec/cameracaptured",,
+"CategoriesService","83973","/System/Library/PrivateFrameworks/Categories.framework/Versions/A/XPCServices/CategoriesService.xpc/Contents/MacOS/CategoriesService",,
+"cfprefsd","599","/usr/sbin/cfprefsd",,
+"cfprefsd","939","/usr/sbin/cfprefsd","5/18/2026 11:22:49 PM","968.6753916"
+"cfprefsd","85112","/usr/sbin/cfprefsd",,
+"cfprefsd","85113","/usr/sbin/cfprefsd",,
+"CharacterPalette","58830","/System/Library/Input Methods/CharacterPalette.app/Contents/MacOS/CharacterPalette","6/1/2026 11:04:13 AM","315.9480291"
+"chrome_crashpad_handler","6181","/Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/148.1.90.128/Helpers/chrome_crashpad_handler","5/31/2026 2:33:00 AM","0.4137208"
+"chronod","1121","/System/Library/PrivateFrameworks/ChronoCore.framework/Support/chronod","5/18/2026 11:38:25 PM","97.5133125"
+"cloudd","32245","/System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/cloudd","6/3/2026 12:59:06 PM","15.3508791"
+"cloudd","84485","/System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/cloudd",,
+"CloudTelemetryService","68373","/System/Library/PrivateFrameworks/CloudTelemetry.framework/Versions/A/XPCServices/CloudTelemetryService.xpc/Contents/MacOS/CloudTelemetryService","6/3/2026 3:57:36 PM","0.44525"
+"CloudTelemetryService","84487","/System/Library/PrivateFrameworks/CloudTelemetry.framework/Versions/A/XPCServices/CloudTelemetryService.xpc/Contents/MacOS/CloudTelemetryService",,
+"CMFSyncAgent","1067","/System/Library/PrivateFrameworks/CommunicationsFilter.framework/CMFSyncAgent","5/18/2026 11:38:13 PM","0.9490083"
+"com.apple.appkit.xpc.openAndSavePanelService","54821","/System/Library/Frameworks/AppKit.framework/Versions/C/XPCServices/com.apple.appkit.xpc.openAndSavePanelService.xpc/Contents/MacOS/com.apple.appkit.xpc.openAndSavePanelService","5/31/2026 8:36:14 AM","494.1042833"
+"com.apple.AppleUserHIDDrivers","709","/System/Library/DriverExtensions/com.apple.AppleUserHIDDrivers.dext/com.apple.AppleUserHIDDrivers",,
+"com.apple.audio.Core-Audio-Driver-Service.helper","650","/System/Library/Frameworks/CoreAudio.framework/Versions/A/XPCServices/com.apple.audio.Core-Audio-Driver-Service.helper.xpc/Contents/MacOS/com.apple.audio.Core-Audio-Driver-Service.helper",,
+"com.apple.cmio.registerassistantservice","594","/System/Library/Frameworks/CoreMediaIO.framework/Versions/A/Resources/com.apple.cmio.registerassistantservice",,
+"com.apple.cmio.videodriverkithostextension","693","/usr/libexec/com.apple.cmio.videodriverkithostextension.systemextension/Contents/MacOS/com.apple.cmio.videodriverkithostextension",,
+"com.apple.dock.extra","1276","/System/Library/CoreServices/Dock.app/Contents/XPCServices/com.apple.dock.extra.xpc/Contents/MacOS/com.apple.dock.extra","5/18/2026 11:38:54 PM","6.896275"
+"com.apple.DriverKit-AppleBCMWLAN","707","/System/Library/DriverExtensions/com.apple.DriverKit-AppleBCMWLAN.dext/com.apple.DriverKit-AppleBCMWLAN",,
+"com.apple.DriverKit-IOUserDockChannelSerial","708","/System/Library/DriverExtensions/com.apple.DriverKit-IOUserDockChannelSerial.dext/com.apple.DriverKit-IOUserDockChannelSerial",,
+"com.apple.geod","85104","/System/Library/PrivateFrameworks/GeoServices.framework/Versions/A/XPCServices/com.apple.geod.xpc/Contents/MacOS/com.apple.geod","6/3/2026 5:02:59 PM","0.4167791"
+"com.apple.geod","85108","/System/Library/PrivateFrameworks/GeoServices.framework/Versions/A/XPCServices/com.apple.geod.xpc/Contents/MacOS/com.apple.geod",,
+"com.apple.geod","85109","/System/Library/PrivateFrameworks/GeoServices.framework/Versions/A/XPCServices/com.apple.geod.xpc/Contents/MacOS/com.apple.geod",,
+"com.apple.hiservices-xpcservice","75817","/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/XPCServices/com.apple.hiservices-xpcservice.xpc/Contents/MacOS/com.apple.hiservices-xpcservice","6/3/2026 4:39:20 PM","0.1295541"
+"com.apple.Notes.SpotlightIndexExtension","3472","/System/Applications/Notes.app/Contents/PlugIns/com.apple.Notes.SpotlightIndexExtension.appex/Contents/MacOS/com.apple.Notes.SpotlightIndexExtension","6/1/2026 4:39:28 AM","0.2918916"
+"com.apple.Safari.History","83791","/System/Volumes/Preboot/Cryptexes/App/usr/libexec/com.apple.Safari.History","6/3/2026 4:59:01 PM","0.0790333"
+"com.apple.Safari.SafeBrowsing.Service","53645","/System/Library/PrivateFrameworks/SafariSafeBrowsing.framework/Versions/A/com.apple.Safari.SafeBrowsing.Service","5/23/2026 7:25:23 AM","8.6868875"
+"com.apple.SafariPlatformSupport.Helper","3923","/System/Volumes/Preboot/Cryptexes/OS/System/Library/PrivateFrameworks/SafariPlatformSupport.framework/Versions/A/XPCServices/com.apple.SafariPlatformSupport.Helper.xpc/Contents/MacOS/com.apple.SafariPlatformSupport.Helper","6/1/2026 4:41:04 AM","4.4384083"
+"com.apple.SafariPlatformSupport.Helper","6396","/System/Volumes/Preboot/Cryptexes/OS/System/Library/PrivateFrameworks/SafariPlatformSupport.framework/Versions/A/XPCServices/com.apple.SafariPlatformSupport.Helper.xpc/Contents/MacOS/com.apple.SafariPlatformSupport.Helper","5/31/2026 2:33:40 AM","9.1326833"
+"com.apple.WebKit.GPU","28147","/System/Volumes/Preboot/Cryptexes/Incoming/OS/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.GPU.xpc/Contents/MacOS/com.apple.WebKit.GPU","5/21/2026 2:01:50 AM","688.8140583"
+"com.apple.WebKit.Networking","28145","/System/Volumes/Preboot/Cryptexes/Incoming/OS/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.Networking.xpc/Contents/MacOS/com.apple.WebKit.Networking","5/21/2026 2:01:50 AM","1890.5560083"
+"com.apple.WebKit.WebContent","2737","/System/Volumes/Preboot/Cryptexes/Incoming/OS/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent","5/22/2026 3:29:55 PM","258.8114"
+"com.apple.WebKit.WebContent","2883","/System/Volumes/Preboot/Cryptexes/Incoming/OS/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent","5/25/2026 5:56:00 AM","1313.4289"
+"com.apple.WebKit.WebContent","2977","/System/Volumes/Preboot/Cryptexes/Incoming/OS/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent","5/25/2026 5:56:21 AM","30.5446541"
+"com.apple.WebKit.WebContent","2980","/System/Volumes/Preboot/Cryptexes/Incoming/OS/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent","5/25/2026 5:56:21 AM","83.1703791"
+"com.apple.WebKit.WebContent","2999","/System/Volumes/Preboot/Cryptexes/Incoming/OS/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent","5/25/2026 5:56:27 AM","20.9215"
+"com.apple.WebKit.WebContent","3262","/System/Volumes/Preboot/Cryptexes/Incoming/OS/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent","5/25/2026 5:57:38 AM","2212.2758791"
+"com.apple.WebKit.WebContent","3364","/System/Volumes/Preboot/Cryptexes/Incoming/OS/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent","5/25/2026 5:58:00 AM","1125.7337625"
+"com.apple.WebKit.WebContent","3394","/System/Volumes/Preboot/Cryptexes/Incoming/OS/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent","5/22/2026 3:32:37 PM","26.82005"
+"com.apple.WebKit.WebContent","3452","/System/Volumes/Preboot/Cryptexes/Incoming/OS/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent","5/25/2026 5:58:23 AM","170.6983875"
+"com.apple.WebKit.WebContent","3519","/System/Volumes/Preboot/Cryptexes/Incoming/OS/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent","5/25/2026 5:58:39 AM","14.1636041"
+"com.apple.WebKit.WebContent","5372","/System/Volumes/Preboot/Cryptexes/Incoming/OS/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent","5/22/2026 3:41:48 PM","418.7527208"
+"com.apple.WebKit.WebContent","5980","/System/Volumes/Preboot/Cryptexes/Incoming/OS/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent","5/22/2026 3:44:27 PM","49.0014958"
+"com.apple.WebKit.WebContent","5987","/System/Volumes/Preboot/Cryptexes/Incoming/OS/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent","5/22/2026 3:44:28 PM","66.8114"
+"com.apple.WebKit.WebContent","10247","/System/Volumes/Preboot/Cryptexes/Incoming/OS/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent","5/25/2026 8:23:42 AM","10.452675"
+"com.apple.WebKit.WebContent","28135","/System/Volumes/Preboot/Cryptexes/Incoming/OS/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent","5/21/2026 2:01:49 AM","222.55535"
+"com.apple.WebKit.WebContent","33036","/System/Volumes/Preboot/Cryptexes/Incoming/OS/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent","5/21/2026 2:39:49 AM","362.0472833"
+"com.apple.WebKit.WebContent","35468","/System/Volumes/Preboot/Cryptexes/Incoming/OS/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent","5/21/2026 2:54:04 AM","211.0703833"
+"CommCenter","84157","/System/Library/Frameworks/CoreTelephony.framework/Support/CommCenter","6/3/2026 4:59:58 PM","0.3032125"
+"commerce","84190","/System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/commerce","6/3/2026 5:00:02 PM","0.1181333"
+"configd","536","/usr/libexec/configd",,
+"contactsd","84391","/System/Library/Frameworks/Contacts.framework/Support/contactsd","6/3/2026 5:00:39 PM","0.5688041"
+"containermanagerd","48111","/usr/libexec/containermanagerd","6/3/2026 4:14:15 AM","5.5437916"
+"containermanagerd","85118","/usr/libexec/containermanagerd",,
+"containermanagerd","85119","/usr/libexec/containermanagerd",,
+"contentlinkingd","75783","/System/Library/PrivateFrameworks/Synapse.framework/Support/contentlinkingd","6/3/2026 4:39:11 PM","0.13585"
+"ContextService","83993","/System/Library/PrivateFrameworks/ContextKit.framework/Versions/A/XPCServices/ContextService.xpc/Contents/MacOS/ContextService",,
+"ContextService","83998","/System/Library/PrivateFrameworks/ContextKit.framework/Versions/A/XPCServices/ContextService.xpc/Contents/MacOS/ContextService","6/3/2026 4:59:34 PM","0.1027583"
+"ContextStoreAgent","29641","/System/Library/PrivateFrameworks/CoreDuetContext.framework/Versions/A/Resources/ContextStoreAgent","6/3/2026 2:48:31 AM","16.8232791"
+"contextstored","563","/System/Library/PrivateFrameworks/CoreDuetContext.framework/Versions/A/Resources/contextstored",,
+"ContinuityCaptureAgent","1046","/usr/libexec/ContinuityCaptureAgent","5/18/2026 11:22:54 PM","7537.3529791"
+"ControlCenter","1053","/System/Library/CoreServices/ControlCenter.app/Contents/MacOS/ControlCenter","5/18/2026 11:22:55 PM","840.6575958"
+"coreaudiod","607","/usr/sbin/coreaudiod",,
+"coreautha","29373","/System/Library/Frameworks/LocalAuthentication.framework/Support/coreautha.bundle/Contents/MacOS/coreautha","5/21/2026 2:08:52 AM","24.7881375"
+"coreauthd","929","/System/Library/Frameworks/LocalAuthentication.framework/Support/coreauthd",,
+"coreauthd","84245","/System/Library/Frameworks/LocalAuthentication.framework/Support/coreauthd","6/3/2026 5:00:14 PM","0.1636375"
+"corebrightnessd","592","/usr/libexec/corebrightnessd",,
+"coreduetd","84211","/usr/libexec/coreduetd",,
+"CoreLocationAgent","15852","/System/Library/CoreServices/CoreLocationAgent.app/Contents/MacOS/CoreLocationAgent","6/3/2026 8:40:39 AM","0.962975"
+"corerepaird","577","/usr/libexec/corerepaird",,
+"coreservicesd","604","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/Support/coreservicesd",,
+"CoreServicesUIAgent","51974","/System/Library/CoreServices/CoreServicesUIAgent.app/Contents/MacOS/CoreServicesUIAgent","6/3/2026 2:18:28 PM","0.4617541"
+"corespeechd","1146","/System/Library/PrivateFrameworks/CoreSpeech.framework/corespeechd","5/18/2026 11:38:39 PM","38.9271916"
+"corespeechd_system","547","/System/Library/PrivateFrameworks/CoreSpeech.framework/corespeechd_system",,
+"corespotlightd","1071","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/corespotlightd","5/18/2026 11:38:14 PM","946.6129708"
+"CoreThreadCommissionerServiced","84389","/System/Library/PrivateFrameworks/CoreThreadCommissionerService.framework/CoreThreadCommissionerServiced","6/3/2026 5:00:39 PM","0.1154458"
+"CrashReporterSupportHelper","1421","/System/Library/CoreServices/CrashReporterSupportHelper",,
+"csimporter","1277","/System/Applications/System Settings.app/Contents/PlugIns/csimporter.appex/Contents/MacOS/csimporter","5/18/2026 11:38:54 PM","0.0824083"
+"ctkahp","1247","/System/Library/Frameworks/CryptoTokenKit.framework/ctkahp.bundle/Contents/MacOS/ctkahp",,
+"ctkahp","1261","/System/Library/Frameworks/CryptoTokenKit.framework/ctkahp.bundle/Contents/MacOS/ctkahp","5/18/2026 11:38:52 PM","1.2520291"
+"ctkd","966","/System/Library/Frameworks/CryptoTokenKit.framework/ctkd",,
+"ctkd","84239","/System/Library/Frameworks/CryptoTokenKit.framework/ctkd","6/3/2026 5:00:13 PM","0.1652083"
+"CursorUIViewService","1255","/System/Library/PrivateFrameworks/TextInputUIMacHelper.framework/Versions/A/XPCServices/CursorUIViewService.xpc/Contents/MacOS/CursorUIViewService","5/18/2026 11:38:50 PM","1933.4698041"
+"CVMServer","1430","/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/CVMServer",,
+"dasd","576","/usr/libexec/dasd",,
+"deleted","84767","/System/Library/PrivateFrameworks/CacheDelete.framework/deleted","6/3/2026 5:01:54 PM","0.1028541"
+"dhcp6d","3908","/usr/libexec/dhcp6d",,
+"diagnostics_agent","1201","/System/Library/CoreServices/diagnostics_agent","5/18/2026 11:38:45 PM","24.5287541"
+"diskarbitrationd","556","/usr/libexec/diskarbitrationd",,
+"DiskUnmountWatcher","37572","/System/Library/PrivateFrameworks/KerberosHelper/Helpers/DiskUnmountWatcher","5/21/2026 3:06:30 AM","0.2390291"
+"DisplayControls","7293","/System/Library/CoreServices/ControlCenter.app/Contents/PlugIns/DisplayControls.appex/Contents/MacOS/DisplayControls","5/19/2026 2:45:19 AM","3.6499541"
+"distnoted","579","/usr/sbin/distnoted",,
+"distnoted","642","/usr/sbin/distnoted",,
+"distnoted","643","/usr/sbin/distnoted",,
+"distnoted","655","/usr/sbin/distnoted",,
+"distnoted","682","/usr/sbin/distnoted",,
+"distnoted","697","/usr/sbin/distnoted",,
+"distnoted","705","/usr/sbin/distnoted",,
+"distnoted","736","/usr/sbin/distnoted",,
+"distnoted","802","/usr/sbin/distnoted",,
+"distnoted","820","/usr/sbin/distnoted",,
+"distnoted","911","/usr/sbin/distnoted",,
+"distnoted","915","/usr/sbin/distnoted",,
+"distnoted","930","/usr/sbin/distnoted","5/18/2026 11:22:49 PM","208.3150708"
+"distnoted","1051","/usr/sbin/distnoted",,
+"distnoted","1078","/usr/sbin/distnoted",,
+"distnoted","1096","/usr/sbin/distnoted",,
+"distnoted","1115","/usr/sbin/distnoted",,
+"distnoted","1152","/usr/sbin/distnoted",,
+"distnoted","1174","/usr/sbin/distnoted",,
+"distnoted","29750","/usr/sbin/distnoted",,
+"dmd","85266","/usr/libexec/dmd","6/3/2026 5:03:34 PM","0.2691166"
+"Dock","1232","/System/Library/CoreServices/Dock.app/Contents/MacOS/Dock","5/18/2026 11:38:48 PM","280.097775"
+"DockHelper","81171","/System/Library/CoreServices/Dock.app/Contents/XPCServices/DockHelper.xpc/Contents/MacOS/DockHelper","6/3/2026 4:49:50 PM","0.6632625"
+"duetexpertd","59287","/usr/libexec/duetexpertd","6/3/2026 2:42:35 PM","84.3832166"
+"eligibilityd","628","/usr/libexec/eligibilityd",,
+"extensionkitservice","84769","/System/Library/Frameworks/ExtensionFoundation.framework/Versions/A/XPCServices/extensionkitservice.xpc/Contents/MacOS/extensionkitservice","6/3/2026 5:01:54 PM","0.0932625"
+"fairplayd","1437","/System/Library/PrivateFrameworks/CoreFP.framework/Versions/A/fairplayd",,
+"familycircled","1020","/System/Library/PrivateFrameworks/FamilyCircle.framework/Versions/A/Resources/familycircled","5/18/2026 11:22:53 PM","16.8785666"
+"feedbackd","84113","/usr/libexec/feedbackd","6/3/2026 4:59:54 PM","0.0578375"
+"filecoordinationd","1024","/usr/sbin/filecoordinationd",,
+"fileproviderd","84766","/System/Library/Frameworks/FileProvider.framework/Support/fileproviderd","6/3/2026 5:01:54 PM","0.3652875"
+"Finder","70689","/System/Library/CoreServices/Finder.app/Contents/MacOS/Finder","5/21/2026 6:38:07 AM","2014.4682"
+"findmylocateagent","84868","/usr/libexec/findmylocateagent","6/3/2026 5:02:15 PM","0.4338875"
+"FindMyWidgetItems","1324","/System/Applications/FindMy.app/Contents/PlugIns/FindMyWidgetItems.appex/Contents/MacOS/FindMyWidgetItems","5/18/2026 11:39:07 PM","0.1760041"
+"FindMyWidgetPeople","1212","/System/Applications/FindMy.app/Contents/PlugIns/FindMyWidgetPeople.appex/Contents/MacOS/FindMyWidgetPeople","5/18/2026 11:38:47 PM","0.2438125"
+"fontd","1118","/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/Support/fontd","5/18/2026 11:38:25 PM","25.725775"
+"fontworker","1120","/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/Support/fontworker","5/18/2026 11:38:25 PM","1.3604"
+"fseventsd","528","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/FSEvents.framework/Versions/A/Support/fseventsd",,
+"gamecontrolleragentd","84176","/usr/libexec/gamecontrolleragentd","6/3/2026 5:00:00 PM","0.1752625"
+"gamecontrollerd","84174","/usr/libexec/gamecontrollerd",,
+"gamepolicyd","1112","/usr/libexec/gamepolicyd",,
+"heard","24791","/System/Library/PrivateFrameworks/HearingCore.framework/heard","6/3/2026 9:11:13 AM","4.9071041"
+"helpd","87238","/System/Library/PrivateFrameworks/HelpData.framework/Versions/A/Resources/helpd","6/3/2026 5:10:11 PM","0.6950958"
+"homed","84232","/System/Library/PrivateFrameworks/HomeKitDaemon.framework/Support/homed","6/3/2026 5:00:11 PM","3.2511416"
+"HomeEnergyWidgetsExtension","1386","/System/Applications/Home.app/Contents/PlugIns/HomeEnergyWidgetsExtension.appex/Contents/MacOS/HomeEnergyWidgetsExtension","5/18/2026 11:39:15 PM","0.5894666"
+"HomeWidget","1334","/System/Applications/Home.app/Contents/PlugIns/HomeWidget.appex/Contents/MacOS/HomeWidget","5/18/2026 11:39:09 PM","0.2804875"
+"icdd","1358","/System/Library/Image Capture/Support/icdd","5/18/2026 11:39:11 PM","1.4238416"
+"identityservicesd","979","/System/Library/PrivateFrameworks/IDS.framework/identityservicesd.app/Contents/MacOS/identityservicesd","5/18/2026 11:22:50 PM","313.7691291"
+"imagent","1008","/System/Library/PrivateFrameworks/IMCore.framework/imagent.app/Contents/MacOS/imagent","5/18/2026 11:22:52 PM","74.3335875"
+"IMAutomaticHistoryDeletionAgent","70416","/System/Library/PrivateFrameworks/IMDPersistence.framework/IMAutomaticHistoryDeletionAgent.app/Contents/MacOS/IMAutomaticHistoryDeletionAgent","5/19/2026 3:43:53 PM","2.2405875"
+"imklaunchagent","1250","/System/Library/Frameworks/InputMethodKit.framework/Versions/A/Resources/imklaunchagent","5/18/2026 11:38:50 PM","6.0372"
+"intelligencecontextd","69489","/System/Library/PrivateFrameworks/IntelligenceFlowContextRuntime.framework/Versions/A/intelligencecontextd","6/3/2026 4:01:43 PM","0.267925"
+"intelligenceflowd","83783","/System/Library/PrivateFrameworks/IntelligenceFlowRuntime.framework/Versions/A/intelligenceflowd","6/3/2026 4:59:00 PM","0.3971666"
+"IntelligencePlatformComputeService","75785","/System/Library/PrivateFrameworks/IntelligencePlatformCompute.framework/Versions/A/XPCServices/IntelligencePlatformComputeService.xpc/Contents/MacOS/IntelligencePlatformComputeService","6/3/2026 4:39:11 PM","1.4923041"
+"IntentsExtension","1390","/System/Library/PrivateFrameworks/CalendarWidget.framework/PlugIns/IntentsExtension.appex/Contents/MacOS/IntentsExtension","5/18/2026 11:39:16 PM","0.01995"
+"InternetSharing","3904","/usr/libexec/InternetSharing",,
+"IOMFB_bics_daemon","539","/usr/libexec/IOMFB_bics_daemon",,
+"IOUserBluetoothSerialDriver","866","/System/Library/DriverExtensions/IOUserBluetoothSerialDriver.dext/IOUserBluetoothSerialDriver",,
+"JournalWidgets","1256","/System/Applications/Journal.app/Contents/PlugIns/JournalWidgets.appex/Contents/MacOS/JournalWidgets","5/18/2026 11:38:50 PM","0.28305"
+"JournalWidgetsSecure","1288","/System/Applications/Journal.app/Contents/PlugIns/JournalWidgetsSecure.appex/Contents/MacOS/JournalWidgetsSecure","5/18/2026 11:38:57 PM","0.1981166"
+"KernelEventAgent","585","/usr/sbin/KernelEventAgent",,
+"kernelmanagerd","555","/usr/libexec/kernelmanagerd",,
+"keybagd","85101","/usr/libexec/keybagd",,
+"Keychain Circle Notification","61559","/System/Library/CoreServices/Keychain Circle Notification.app/Contents/MacOS/Keychain Circle Notification","6/3/2026 3:08:13 PM","0.3011958"
+"knowledge-agent","55769","/usr/libexec/knowledge-agent","5/31/2026 4:41:02 PM","25.5294416"
+"launchd","1","/sbin/launchd",,
+"launchservicesd","567","/System/Library/CoreServices/launchservicesd",,
+"linkd","75481","/usr/libexec/linkd","6/3/2026 4:38:02 PM","1.4756375"
+"liveactivitiesd","84787","/System/Library/PrivateFrameworks/SessionCore.framework/Support/liveactivitiesd","6/3/2026 5:01:56 PM","0.151725"
+"locationd","572","/usr/libexec/locationd",,
+"logd","524","/usr/libexec/logd",,
+"login","81212","/usr/bin/login",,
+"logind","583","/System/Library/CoreServices/logind",,
+"loginwindow","600","/System/Library/CoreServices/loginwindow.app/Contents/MacOS/loginwindow","5/18/2026 11:22:34 PM","2861.6389916"
+"lsd","612","/usr/libexec/lsd",,
+"lsd","940","/usr/libexec/lsd","5/18/2026 11:22:49 PM","335.3925166"
+"maild","1065","/System/Library/PrivateFrameworks/EmailDaemon.framework/Versions/A/maild","5/18/2026 11:38:13 PM","7.6993916"
+"ManagedSettingsAgent","85267","/System/Library/Frameworks/ManagedSettings.framework/Versions/A/ManagedSettingsAgent","6/3/2026 5:03:35 PM","0.0719416"
+"mbuseragent","50040","/System/Library/CoreServices/Setup Assistant.app/Contents/Resources/mbuseragent","5/21/2026 4:26:46 AM","0.1579833"
+"mdbulkimport","1171","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdbulkimport","5/18/2026 11:38:43 PM","18.1842"
+"mDNSResponder","611","/usr/sbin/mDNSResponder",,
+"mDNSResponderHelper","651","/usr/sbin/mDNSResponderHelper",,
+"mds","553","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mds",,
+"mds_stores","831","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mds_stores",,
+"mdworker_shared","87831","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdworker_shared","6/3/2026 5:12:23 PM","0.2136"
+"mdworker_shared","87875","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdworker_shared","6/3/2026 5:12:34 PM","0.2460833"
+"mdworker_shared","87877","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdworker_shared","6/3/2026 5:12:34 PM","0.208"
+"mdworker_shared","87878","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdworker_shared","6/3/2026 5:12:34 PM","0.2047708"
+"mdworker_shared","87881","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdworker_shared","6/3/2026 5:12:35 PM","0.1739625"
+"mdworker_shared","87896","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdworker_shared","6/3/2026 5:12:38 PM","0.3354791"
+"mdworker_shared","87898","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdworker_shared","6/3/2026 5:12:38 PM","0.3082375"
+"mdworker_shared","87943","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdworker_shared","6/3/2026 5:12:49 PM","0.1277333"
+"mdworker_shared","87953","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdworker_shared","6/3/2026 5:12:50 PM","0.111375"
+"mdworker_shared","87954","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdworker_shared","6/3/2026 5:12:50 PM","0.1587041"
+"mdworker_shared","87955","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdworker_shared","6/3/2026 5:12:50 PM","0.1184333"
+"mdworker_shared","87956","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdworker_shared","6/3/2026 5:12:50 PM","0.1584958"
+"mdworker_shared","87963","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdworker_shared","6/3/2026 5:12:52 PM","0.1691208"
+"mdworker_shared","87976","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdworker_shared","6/3/2026 5:12:55 PM","0.0795375"
+"mdworker_shared","87977","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdworker_shared","6/3/2026 5:12:55 PM","0.1453833"
+"mdworker_shared","87978","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdworker_shared","6/3/2026 5:12:55 PM","0.0723416"
+"mdwrite","1293","/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdwrite","5/18/2026 11:38:59 PM","1.1137541"
+"mediaremoteagent","1223","/System/Library/PrivateFrameworks/MediaRemote.framework/Support/mediaremoteagent","5/18/2026 11:38:48 PM","3.6704166"
+"mediaremoted","529","/System/Library/PrivateFrameworks/MediaRemote.framework/Support/mediaremoted",,
+"migrationhelper","974","/System/Library/PrivateFrameworks/SystemMigrationNetwork.framework/Versions/A/Resources/migrationhelper","5/18/2026 11:22:50 PM","0.0292833"
+"mobileactivationd","85757","/usr/libexec/mobileactivationd",,
+"mobileassetd","75409","/usr/libexec/mobileassetd",,
+"mobiletimerd","84785","/System/Library/PrivateFrameworks/MobileTimer.framework/Executables/mobiletimerd","6/3/2026 5:01:56 PM","0.163875"
+"modelmanagerd","687","/usr/libexec/modelmanagerd",,
+"neagent","84480","/usr/libexec/neagent","6/3/2026 5:00:56 PM","0.0668166"
+"nearbyd","1048","/usr/libexec/nearbyd",,
+"nehelper","84170","/usr/libexec/nehelper",,
+"NeptuneOneWallpaper","1429","/System/Library/ExtensionKit/Extensions/NeptuneOneWallpaper.appex/Contents/MacOS/NeptuneOneWallpaper","5/18/2026 11:54:51 PM","0.0191875"
+"nesessionmanager","573","/usr/libexec/nesessionmanager",,
+"netbiosd","19496","/usr/sbin/netbiosd",,
+"networkserviceproxy","67314","/usr/libexec/networkserviceproxy","6/3/2026 3:54:10 PM","2.5905541"
+"NewsTag","1388","/System/Applications/News.app/Contents/PlugIns/NewsTag.appex/Contents/MacOS/NewsTag","5/18/2026 11:39:15 PM","0.2792916"
+"NewsToday2","1309","/System/Applications/News.app/Contents/PlugIns/NewsToday2.appex/Contents/MacOS/NewsToday2","5/18/2026 11:39:03 PM","0.4483916"
+"NewsTodayIntents","1391","/System/Applications/News.app/Contents/PlugIns/NewsTodayIntents.appex/Contents/MacOS/NewsTodayIntents","5/18/2026 11:39:16 PM","0.1023791"
+"nfcd","83631","/usr/libexec/nfcd",,
+"NotificationCenter","1133","/System/Library/CoreServices/NotificationCenter.app/Contents/MacOS/NotificationCenter","5/18/2026 11:38:26 PM","132.6895291"
+"notifyd","590","/usr/sbin/notifyd",,
+"nsurlsessiond","614","/usr/libexec/nsurlsessiond",,
+"nsurlsessiond","961","/usr/libexec/nsurlsessiond","5/18/2026 11:22:50 PM","120.8818875"
+"oahd","905","/usr/libexec/rosetta/oahd",,
+"online-auth-agent","83885","/usr/libexec/online-auth-agent",,
+"opendirectoryd","565","/usr/libexec/opendirectoryd",,
+"osanalyticshelper","84317","/System/Library/CoreServices/osanalyticshelper",,
+"ospredictiond","84101","/usr/libexec/ospredictiond",,
+"PAH_Extension","1671","/System/Library/Input Methods/PressAndHold.app/Contents/PlugIns/PAH_Extension.appex/Contents/MacOS/PAH_Extension","5/19/2026 1:36:43 AM","30.0550958"
+"passd","1064","/System/Library/PrivateFrameworks/PassKitCore.framework/passd","5/18/2026 11:38:13 PM","35.0632583"
+"PasswordBreachAgent","86624","/System/Volumes/Preboot/Cryptexes/App/usr/libexec/PasswordBreachAgent","5/25/2026 11:31:34 PM","1.5605083"
+"pboard","953","/usr/libexec/pboard","5/18/2026 11:22:50 PM","24.9847875"
+"pbs","84419","/System/Library/CoreServices/pbs","6/3/2026 5:00:47 PM","0.0359916"
+"peopled","13483","/System/Library/PrivateFrameworks/People.framework/peopled","5/21/2026 12:50:30 AM","10.151925"
+"PeopleWidget_macOSExtension","1389","/System/Library/CoreServices/PeopleViewService.app/Contents/PlugIns/PeopleWidget_macOSExtension.appex/Contents/MacOS/PeopleWidget_macOSExtension","5/18/2026 11:39:15 PM","0.3052833"
+"PerfPowerServices","7921","/usr/libexec/PerfPowerServices",,
+"photolibraryd","84776","/System/Library/PrivateFrameworks/PhotoLibraryServices.framework/Versions/A/Support/photolibraryd","6/3/2026 5:01:55 PM","0.0618166"
+"PhotosReliveWidget","1297","/System/Applications/Photos.app/Contents/PlugIns/PhotosReliveWidget.appex/Contents/MacOS/PhotosReliveWidget","5/18/2026 11:39:00 PM","0.2618958"
+"pkd","84247","/usr/libexec/pkd","6/3/2026 5:00:14 PM","0.222125"
+"PlugInLibraryService","84779","/System/Library/Frameworks/NetFS.framework/Versions/A/XPCServices/PlugInLibraryService.xpc/Contents/MacOS/PlugInLibraryService","6/3/2026 5:01:55 PM","0.0257666"
+"PodcastsWidget","1302","/System/Applications/Podcasts.app/Contents/PlugIns/PodcastsWidget.appex/Contents/MacOS/PodcastsWidget","5/18/2026 11:39:01 PM","1.1102583"
+"PowerChime","27036","/System/Library/CoreServices/PowerChime.app/Contents/MacOS/PowerChime","5/19/2026 5:19:47 AM","21.8498791"
+"powerd","538","/System/Library/CoreServices/powerd.bundle/powerd",,
+"powerexperienced","84311","/usr/libexec/powerexperienced",,
+"PowerUIAgent","78677","/usr/libexec/PowerUIAgent",,
+"PrintCenterWidgetExtension.macOS","1278","/System/Applications/Utilities/Print Center.app/Contents/PlugIns/PrintCenterWidgetExtension.macOS.appex/Contents/MacOS/PrintCenterWidgetExtension.macOS","5/18/2026 11:38:55 PM","0.0612541"
+"pwsh","81312","/opt/homebrew/Cellar/powershell/7.6.2_1/libexec/pwsh","6/3/2026 4:50:20 PM","8.27117"
+"python3.13","94103","/Applications/Splunk/bin/python3.13","5/21/2026 3:29:06 PM","271.341225"
+"QEMUHelper","3901","/Applications/UTM.app/Contents/XPCServices/QEMUHelper.xpc/Contents/MacOS/QEMUHelper","6/1/2026 4:40:59 AM","0.2284583"
+"QEMULauncher","3902","/Applications/UTM.app/Contents/XPCServices/QEMUHelper.xpc/Contents/MacOS/QEMULauncher.app/Contents/MacOS/QEMULauncher","6/1/2026 4:40:59 AM","12835.3783375"
+"QEMULauncher","5419","/Applications/UTM.app/Contents/XPCServices/QEMUHelper.xpc/Contents/MacOS/QEMULauncher.app/Contents/MacOS/QEMULauncher","6/2/2026 12:58:55 AM","0.3350541"
+"QEMULauncher","5424","/Applications/UTM.app/Contents/XPCServices/QEMUHelper.xpc/Contents/MacOS/QEMULauncher.app/Contents/MacOS/QEMULauncher","6/2/2026 12:58:56 AM","20481.2045708"
+"QEMULauncher","8950","/Applications/UTM.app/Contents/XPCServices/QEMUHelper.xpc/Contents/MacOS/QEMULauncher.app/Contents/MacOS/QEMULauncher","6/1/2026 5:05:25 AM","68366.6474875"
+"QuickLookUIService","95984","/System/Library/Frameworks/QuickLookUI.framework/Versions/A/XPCServices/QuickLookUIService.xpc/Contents/MacOS/QuickLookUIService","5/31/2026 11:41:30 AM","36.2680625"
+"rapportd","962","/usr/libexec/rapportd","5/18/2026 11:22:50 PM","511.165975"
+"RecordWidgetExtension","1314","/System/Applications/VoiceMemos.app/Contents/PlugIns/RecordWidgetExtension.appex/Contents/MacOS/RecordWidgetExtension","5/18/2026 11:39:04 PM","0.1067041"
+"remindd","84865","/usr/libexec/remindd","6/3/2026 5:02:14 PM","1.0744625"
+"RemindersIntentsExtension","1383","/System/Applications/Reminders.app/Contents/PlugIns/RemindersIntentsExtension.appex/Contents/MacOS/RemindersIntentsExtension","5/18/2026 11:39:15 PM","0.0784375"
+"RemindersWidgetExtension","1335","/System/Applications/Reminders.app/Contents/PlugIns/RemindersWidgetExtension.appex/Contents/MacOS/RemindersWidgetExtension","5/18/2026 11:39:09 PM","0.274175"
+"remoted","543","/usr/libexec/remoted",,
+"replayd","83796","/usr/libexec/replayd","6/3/2026 4:59:02 PM","2.3947125"
+"replicatord","84788","/System/Library/PrivateFrameworks/ReplicatorCore.framework/Support/replicatord","6/3/2026 5:01:57 PM","1.1957083"
+"ReportCrash","46849","/System/Library/CoreServices/ReportCrash","5/21/2026 4:09:07 AM","184.6303125"
+"revisiond","584","/System/Library/PrivateFrameworks/GenerationalStorage.framework/Versions/A/Support/revisiond",,
+"routined","85099","/usr/libexec/routined","6/3/2026 5:02:58 PM","0.8953083"
+"rtadvd","3907","/usr/sbin/rtadvd",,
+"rtcreportingd","50895","/usr/libexec/rtcreportingd",,
+"runningboardd","606","/usr/libexec/runningboardd",,
+"Safari","28129","/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app/Contents/MacOS/Safari","5/21/2026 2:01:49 AM","4246.30505"
+"SafariBookmarksSyncAgent","58480","/System/Volumes/Preboot/Cryptexes/App/usr/libexec/SafariBookmarksSyncAgent","6/3/2026 2:39:58 PM","0.5139833"
+"SafariNotificationAgent","44479","/System/Volumes/Preboot/Cryptexes/App/usr/libexec/SafariNotificationAgent","5/21/2026 3:55:06 AM","5.209575"
+"SafariWidgetExtension","1350","/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app/Contents/Extensions/SafariWidgetExtension.appex/Contents/MacOS/SafariWidgetExtension","5/18/2026 11:39:11 PM","0.2300333"
+"sandboxd","83989","/usr/libexec/sandboxd",,
+"ScopedBookmarkAgent","84777","/System/Library/CoreServices/ScopedBookmarkAgent","6/3/2026 5:01:55 PM","0.0957208"
+"ScreenTimeAgent","85263","/System/Library/PrivateFrameworks/ScreenTimeCore.framework/Versions/A/ScreenTimeAgent","6/3/2026 5:03:34 PM","0.5489083"
+"ScreenTimeWidgetExtension","1321","/System/Library/CoreServices/Screen Time.app/Contents/PlugIns/ScreenTimeWidgetExtension.appex/Contents/MacOS/ScreenTimeWidgetExtension","5/18/2026 11:39:07 PM","0.268"
+"ScreenTimeWidgetIntentsExtension","1346","/System/Library/CoreServices/Screen Time.app/Contents/PlugIns/ScreenTimeWidgetIntentsExtension.appex/Contents/MacOS/ScreenTimeWidgetIntentsExtension","5/18/2026 11:39:10 PM","0.1368291"
+"searchpartyd","719","/usr/libexec/searchpartyd",,
+"searchpartyuseragent","26015","/usr/libexec/searchpartyuseragent","6/3/2026 9:15:07 AM","21.2612083"
+"secd","943","/usr/libexec/secd","5/18/2026 11:22:50 PM","338.6560375"
+"secinitd","84772","/usr/libexec/secinitd","6/3/2026 5:01:54 PM","0.1429083"
+"secinitd","85110","/usr/libexec/secinitd",,
+"secinitd","85111","/usr/libexec/secinitd",,
+"securityd","570","/usr/sbin/securityd",,
+"SetStoreUpdateService","84482","/System/Library/PrivateFrameworks/CascadeSets.framework/Versions/A/XPCServices/SetStoreUpdateService.xpc/Contents/MacOS/SetStoreUpdateService","6/3/2026 5:00:56 PM","0.1169375"
+"sharedfilelistd","1021","/System/Library/CoreServices/sharedfilelistd","5/18/2026 11:22:53 PM","12.30905"
+"ShareSheetUI","48702","/System/Library/PrivateFrameworks/ShareKit.framework/Versions/A/PlugIns/ShareSheetUI.appex/Contents/MacOS/ShareSheetUI","5/21/2026 4:19:50 AM","22.69375"
+"ShareSheetUI","71286","/System/Library/PrivateFrameworks/ShareKit.framework/Versions/A/PlugIns/ShareSheetUI.appex/Contents/MacOS/ShareSheetUI","5/21/2026 6:41:33 AM","33.7032583"
+"sharingd","1007","/usr/libexec/sharingd","5/18/2026 11:22:52 PM","621.6297208"
+"ShortcutLiveActivityWidgetExtension","1221","/System/Applications/Shortcuts.app/Contents/PlugIns/ShortcutLiveActivityWidgetExtension.appex/Contents/MacOS/ShortcutLiveActivityWidgetExtension","5/18/2026 11:38:48 PM","0.0661"
+"ShortcutsViewService","25939","/System/Library/PrivateFrameworks/WorkflowKit.framework/XPCServices/ShortcutsViewService.xpc/Contents/MacOS/ShortcutsViewService","6/3/2026 9:14:52 AM","0.9714208"
+"ShortcutsWidgetExtension","1348","/System/Applications/Shortcuts.app/Contents/PlugIns/ShortcutsWidgetExtension.appex/Contents/MacOS/ShortcutsWidgetExtension","5/18/2026 11:39:10 PM","0.2378666"
+"SidecarRelay","82532","/usr/libexec/SidecarRelay","6/3/2026 6:39:58 AM","5.1571166"
+"siriactionsd","84774","/System/Library/PrivateFrameworks/VoiceShortcuts.framework/Versions/A/Support/siriactionsd","6/3/2026 5:01:55 PM","6.0547291"
+"siriinferenced","13484","/System/Library/PrivateFrameworks/SiriInference.framework/Versions/A/siriinferenced","5/21/2026 12:50:30 AM","4.8207125"
+"socketfilterfw","645","/usr/libexec/ApplicationFirewall/socketfilterfw",,
+"spindump","84626","/usr/sbin/spindump",,
+"spindump_agent","84628","/usr/libexec/spindump_agent","6/3/2026 5:01:32 PM","0.033775"
+"splunk-supervisor","94100","/Applications/Splunk/bin/splunk-supervisor","5/21/2026 3:29:06 PM","27.4025166"
+"splunkd","94028","/Applications/Splunk/bin/splunkd","5/21/2026 3:29:02 PM","8403.6865916"
+"splunkd","94029","/Applications/Splunk/bin/splunkd","5/21/2026 3:29:02 PM","2767.8825708"
+"splunkd","94236","/Applications/Splunk/bin/splunkd","5/21/2026 3:29:37 PM","1518.7908625"
+"splunkd","94237","/Applications/Splunk/bin/splunkd","5/21/2026 3:29:37 PM","0.0010666"
+"splunkd","94238","/Applications/Splunk/bin/splunkd","5/21/2026 3:29:37 PM","1492.7446416"
+"splunkd","94239","/Applications/Splunk/bin/splunkd","5/21/2026 3:29:37 PM","0.0006958"
+"splunkd","94240","/Applications/Splunk/bin/splunkd","5/21/2026 3:29:37 PM","1472.9996041"
+"splunkd","94241","/Applications/Splunk/bin/splunkd","5/21/2026 3:29:37 PM","0.0006666"
+"splunkd","94242","/Applications/Splunk/bin/splunkd","5/21/2026 3:29:37 PM","1475.4523166"
+"splunkd","94243","/Applications/Splunk/bin/splunkd","5/21/2026 3:29:37 PM","0.0007"
+"Spotlight","1333","/System/Library/CoreServices/Spotlight.app/Contents/MacOS/Spotlight","5/18/2026 11:39:09 PM","291.8715541"
+"spotlightknowledged","1936","/System/Library/Frameworks/CoreSpotlight.framework/spotlightknowledged","5/19/2026 2:07:26 AM","2.1820041"
+"spotlightknowledged.updater","25717","/usr/libexec/spotlightknowledged.updater","6/3/2026 9:14:31 AM","7.3129333"
+"ssh-agent","17504","/usr/bin/ssh-agent","5/21/2026 1:12:21 AM","0.1642958"
+"StatusKitAgent","83877","/System/Library/PrivateFrameworks/StatusKit.framework/StatusKitAgent","6/3/2026 4:59:17 PM","0.3966458"
+"Stickies","1230","/System/Applications/Stickies.app/Contents/MacOS/Stickies","5/18/2026 11:38:48 PM","49.5309208"
+"StocksWidget","1325","/System/Applications/Stocks.app/Contents/PlugIns/StocksWidget.appex/Contents/MacOS/StocksWidget","5/18/2026 11:39:07 PM","2.2014458"
+"SubmitDiagInfo","1797","/System/Library/CoreServices/SubmitDiagInfo",,
+"suggestd","24851","/System/Library/PrivateFrameworks/CoreSuggestions.framework/Versions/A/Support/suggestd","6/3/2026 9:11:26 AM","5.2699"
+"suhelperd","696","/System/Library/CoreServices/Software Update.app/Contents/Resources/suhelperd",,
+"symptomsd","638","/usr/libexec/symptomsd",,
+"syncdefaultsd","84172","/System/Library/PrivateFrameworks/SyncedDefaults.framework/Support/syncdefaultsd","6/3/2026 4:59:59 PM","0.5573041"
+"syslogd","560","/usr/sbin/syslogd",,
+"sysmond","86690","/usr/libexec/sysmond",,
+"syspolicyd","653","/usr/libexec/syspolicyd",,
+"systemstats","532","/usr/sbin/systemstats",,
+"systemstats","747","/usr/sbin/systemstats",,
+"SystemUIServer","1234","/System/Library/CoreServices/SystemUIServer.app/Contents/MacOS/SystemUIServer","5/18/2026 11:38:48 PM","11.6762833"
+"talagentd","25713","/System/Library/CoreServices/talagentd","6/3/2026 9:14:30 AM","3.8206291"
+"tccd","36680","/System/Library/PrivateFrameworks/TCC.framework/Support/tccd",,
+"tccd","75421","/System/Library/PrivateFrameworks/TCC.framework/Support/tccd","6/3/2026 4:37:56 PM","0.5893875"
+"Terminal","81208","/System/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal","6/3/2026 4:49:57 PM","20.469625"
+"TextInputMenuAgent","1364","/System/Library/CoreServices/TextInputMenuAgent.app/Contents/MacOS/TextInputMenuAgent","5/18/2026 11:39:11 PM","22.5233375"
+"TextInputSwitcher","61584","/System/Library/CoreServices/TextInputSwitcher.app/Contents/MacOS/TextInputSwitcher","6/3/2026 3:08:17 PM","1.0881583"
+"ThemeWidgetControlViewService","67914","/System/Library/Frameworks/AppKit.framework/Versions/C/XPCServices/ThemeWidgetControlViewService.xpc/Contents/MacOS/ThemeWidgetControlViewService","6/3/2026 3:55:57 PM","0.3640625"
+"thermalmonitord","562","/usr/libexec/thermalmonitord",,
+"timed","568","/usr/libexec/timed",,
+"tipsd","84231","/usr/libexec/tipsd","6/3/2026 5:00:11 PM","0.6325125"
+"trustd","603","/usr/libexec/trustd",,
+"trustd","944","/usr/libexec/trustd","5/18/2026 11:22:50 PM","517.1276916"
+"trustd","85114","/usr/libexec/trustd",,
+"trustd","85116","/usr/libexec/trustd",,
+"trustdFileHelper","85115","/usr/libexec/trustdFileHelper",,
+"UIKitSystem","1213","/System/Library/CoreServices/UIKitSystem.app/Contents/MacOS/UIKitSystem","5/18/2026 11:38:47 PM","23.6123416"
+"universalaccessd","951","/usr/sbin/universalaccessd","5/18/2026 11:22:50 PM","227.8999708"
+"UniversalControl","1771","/System/Library/CoreServices/UniversalControl.app/Contents/MacOS/UniversalControl","5/19/2026 1:57:48 AM","843.9313958"
+"UsageTrackingAgent","48664","/System/Library/PrivateFrameworks/UsageTracking.framework/Versions/A/UsageTrackingAgent","5/21/2026 4:19:37 AM","38.4383208"
+"usbmuxd","569","/Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/usbmuxd",,
+"useractivityd","1220","/System/Library/PrivateFrameworks/UserActivity.framework/Agents/useractivityd","5/18/2026 11:38:48 PM","70.3094541"
+"UserEventAgent","526","/usr/libexec/UserEventAgent",,
+"UserEventAgent","945","/usr/libexec/UserEventAgent","5/18/2026 11:22:50 PM","2616.1260666"
+"usermanagerd","75430","/usr/libexec/usermanagerd",,
+"usernoted","963","/usr/sbin/usernoted","5/18/2026 11:22:50 PM","69.4117375"
+"UserNotificationCenter","37222","/System/Library/CoreServices/UserNotificationCenter.app/Contents/MacOS/UserNotificationCenter","5/21/2026 3:04:37 AM","10.1037208"
+"usernotificationsd","970","/System/Library/PrivateFrameworks/UserNotificationsCore.framework/Support/usernotificationsd","5/18/2026 11:22:50 PM","28.4986875"
+"UTM","3865","/Applications/UTM.app/Contents/MacOS/UTM","6/1/2026 4:40:56 AM","3546.3981416"
+"UVCAssistant","761","/System/Library/Frameworks/CoreMediaIO.framework/Versions/A/Resources/UVCAssistant.systemextension/Contents/MacOS/UVCAssistant",,
+"ViewBridgeAuxiliary","1137","/System/Library/PrivateFrameworks/ViewBridge.framework/Versions/A/XPCServices/ViewBridgeAuxiliary.xpc/Contents/MacOS/ViewBridgeAuxiliary","5/18/2026 11:38:27 PM","56.0408"
+"VoiceMemosSettingsWidgetExtension","1317","/System/Applications/VoiceMemos.app/Contents/PlugIns/VoiceMemosSettingsWidgetExtension.appex/Contents/MacOS/VoiceMemosSettingsWidgetExtension","5/18/2026 11:39:05 PM","0.1042791"
+"WallpaperAerialsExtension","1272","/System/Library/ExtensionKit/Extensions/WallpaperAerialsExtension.appex/Contents/MacOS/WallpaperAerialsExtension","5/18/2026 11:38:53 PM","2193.2092208"
+"WallpaperAgent","1240","/System/Library/CoreServices/WallpaperAgent.app/Contents/MacOS/WallpaperAgent","5/18/2026 11:38:48 PM","36.3682125"
+"WallpaperDynamicExtension","1425","/System/Library/ExtensionKit/Extensions/WallpaperDynamicExtension.appex/Contents/MacOS/WallpaperDynamicExtension","5/18/2026 11:54:51 PM","0.1782458"
+"WallpaperGradientExtension","1428","/System/Library/ExtensionKit/Extensions/WallpaperGradientExtension.appex/Contents/MacOS/WallpaperGradientExtension","5/18/2026 11:54:51 PM","0.0234916"
+"WallpaperImageExtension","1424","/System/Library/ExtensionKit/Extensions/WallpaperImageExtension.appex/Contents/MacOS/WallpaperImageExtension","5/18/2026 11:54:51 PM","0.2023875"
+"WallpaperLegacyExtension","1427","/System/Library/ExtensionKit/Extensions/WallpaperLegacyExtension.appex/Contents/MacOS/WallpaperLegacyExtension","5/18/2026 11:54:51 PM","0.0841333"
+"WallpaperMacintoshExtension","1423","/System/Library/ExtensionKit/Extensions/WallpaperMacintoshExtension.appex/Contents/MacOS/WallpaperMacintoshExtension","5/18/2026 11:54:51 PM","0.0241708"
+"WallpaperSequoiaExtension","1426","/System/Library/ExtensionKit/Extensions/WallpaperSequoiaExtension.appex/Contents/MacOS/WallpaperSequoiaExtension","5/18/2026 11:54:51 PM","0.0224333"
+"WallpaperSonomaExtension","1422","/System/Library/ExtensionKit/Extensions/WallpaperSonomaExtension.appex/Contents/MacOS/WallpaperSonomaExtension","5/18/2026 11:54:51 PM","0.0257208"
+"watchdogd","549","/usr/libexec/watchdogd",,
+"WeatherMenu","1362","/System/Applications/Weather.app/Contents/Library/LoginItems/WeatherMenu.app/Contents/MacOS/WeatherMenu","5/18/2026 11:39:11 PM","352.6815166"
+"WiFiAgent","1032","/System/Library/CoreServices/WiFiAgent.app/Contents/MacOS/WiFiAgent","5/18/2026 11:22:54 PM","95.8217875"
+"wifip2pd","30346","/usr/libexec/wifip2pd",,
+"wifivelocityd","1081","/usr/libexec/wifivelocityd",,
+"WindowManager","1077","/System/Library/CoreServices/WindowManager.app/Contents/MacOS/WindowManager","5/18/2026 11:38:15 PM","867.2533791"
+"WindowServer","597","/System/Library/PrivateFrameworks/SkyLight.framework/Versions/A/Resources/WindowServer",,
+"WirelessRadioManagerd","674","/usr/sbin/WirelessRadioManagerd",,
+"WorldClockWidget","1392","/System/Applications/Clock.app/Contents/PlugIns/WorldClockWidget.appex/Contents/MacOS/WorldClockWidget","5/18/2026 11:39:17 PM","0.2852666"
+"xprotectd","564","/usr/libexec/xprotectd",,
+"zsh","81215","/bin/zsh","6/3/2026 4:49:57 PM","0.0197125"
