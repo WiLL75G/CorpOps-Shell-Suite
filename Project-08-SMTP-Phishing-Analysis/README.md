@@ -1,4 +1,4 @@
-# Project 08 — SMTP-Analyzer: Phishing Header Analysis (MITRE T1566)
+# SMTP-Analyzer: Phishing Header Analysis (MITRE T1566)
 
 > Built a custom Python tool that parses raw email headers, extracts forensic fields, checks SPF/DKIM/DMARC authentication, scores phishing indicators, and produces a structured verdict, the complete Tier 1 analyst workflow for a suspicious email landing in the SOC queue.
 
